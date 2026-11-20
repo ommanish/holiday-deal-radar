@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A source-linked watchlist for verified holiday tech, clearance, and doorbuster deals." />
+    <title>Deal Radar · Holiday Tech Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <nav><a class="brand" href="#top">DEAL<span>RADAR</span></a><span class="nav-note">Holiday edition · US</span><a class="nav-link" href="#method">How we verify</a></nav>
+      <header id="top" class="hero">
+        <p class="eyebrow"><i></i> VERIFIED PRICE WATCH</p>
+        <h1>Holiday deals,<br><em>without the noise.</em></h1>
+        <p class="intro">A curated watchlist for Apple, headphones and worthwhile tech gifts under $1,000. Every card links to the retailer and shows its condition.</p>
+        <div class="status"><span class="live-dot"></span><span id="checked">Loading latest checks…</span></div>
+      </header>
+      <section class="controls" aria-label="Deal filters">
+        <div class="chips" id="filters"></div>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search deals" /></label>
+      </section>
+      <section aria-live="polite"><div class="result-line"><strong id="count">0</strong> verified offers <span>Prices and stock can change at checkout.</span></div><div id="deals" class="deal-grid"></div></section>
+      <section id="method" class="method"><p class="eyebrow"><i></i> OUR STANDARD</p><h2>Useful only when it’s real.</h2><div class="method-grid"><article><b>01</b><h3>Direct sources</h3><p>We link back to the official retailer or brand page—not an affiliate landing page.</p></article><article><b>02</b><h3>Condition upfront</h3><p>Open-box and refurbished products are clearly marked so they are never confused with new items.</p></article><article><b>03</b><h3>No fake savings</h3><p>“Was” prices are shown only when verifiable. Questionable comparison prices are excluded.</p></article></div></section>
+      <footer><span>DEAL RADAR · BUILT FOR SMART HOLIDAY SHOPPING</span><span>Not affiliated with listed retailers.</span></footer>
+    </main>
+    <template id="deal-template"><article class="deal-card"><div class="visual"><span class="emoji"></span><span class="tag"></span></div><div class="deal-copy"><p class="retailer"></p><h2></h2><p class="meta"></p><div class="price-row"><strong class="price"></strong><span class="was"></span></div><p class="saving"></p><a class="shop" target="_blank" rel="noopener">View verified offer <span>↗</span></a></div></article></template>
+    <script src="app.js"></script>
+  </body>
+</html>
