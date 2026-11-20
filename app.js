@@ -1,4 +1,8 @@
 const deals = [
+  {name:'IKEA MORABO Sofa, Gunnared Light Green/Wood', retailer:'IKEA', price:549, was:799, emoji:'🛋️', condition:'New · IKEA Family sale', category:'Furniture', url:'https://www.ikea.com/us/en/p/morabo-sofa-gunnared-light-green-wood-s09318339/', note:'IKEA Family price · online and in-store availability varies · 10-year limited warranty · 365-day return window · ends Nov. 24 or while supplies last'},
+  {name:'Dyson PencilVac Fluffycones Cordless Vacuum with Extra Battery', retailer:'Costco', price:399.99, was:599.99, emoji:'🧹', condition:'New · Black Friday', category:'Vacuums', url:'https://www.costco.com/p/-/4201052156', note:'Online only · Costco member pricing · limit 5 · 2-year warranty · returns at Costco warehouses · valid through Nov. 30'},
+  {name:'Fujifilm instax mini 12 White Kawaii Giftset', retailer:'Target', price:69.99, was:89.99, emoji:'📷', condition:'New · Limited-time', category:'Cameras', url:'https://www.target.com/p/-/A-1011797154', note:'In stock online when checked · $20 off · offer ends Saturday · returnable to Target stores or Target.com'},
+  {name:'Panasonic 1.3 cu. ft. Countertop Microwave', retailer:'Costco', price:129.99, was:169.99, emoji:'🍽️', condition:'New · Black Friday', category:'Home Goods', url:'https://www.costco.com/p/-/4201016861', note:'Warehouse and online · Costco member pricing · limit 5 · $40 off · valid through Nov. 30'},
   {name:'Bose SoundLink Max SE Portable Speaker', retailer:'Best Buy', price:229, was:349, emoji:'🔊', condition:'New · Doorbuster', category:'Speakers', url:'https://www.bestbuy.com/product/bose-soundlink-max-se-portable-bluetooth-speaker-with-powerful-stereo-sound-deep-bass-blue-dusk/J7C5V6WH5T', note:'Sold by Best Buy · free pickup and shipping · deal ends Nov. 21 · comparison value is retailer-listed'},
   {name:'Beats Solo 4 Wireless On-Ear Headphones, Bright Pink', retailer:'Target', price:79.99, was:199.99, emoji:'🎧', condition:'New · Limited-time', category:'Headphones', url:'https://www.target.com/p/-/A-1012454303', note:'In stock online · $120 off · Target sale ends Nov. 21 · listed regular price may be MSRP'},
   {name:'Dell DC15250 15.6-inch Touchscreen Laptop (Core i5, 8GB/512GB)', retailer:'Walmart', price:429, was:849.99, emoji:'💻', condition:'New · Rollback', category:'Laptops', url:'https://www.walmart.com/ip/Dell-DC15250-15-6-inch-FHD-Touchscreen-Laptop-Intel-Core-i5-1334U-8GB-RAM-512GB-SSD-Carbon-Black/6387515296', note:'Sold and shipped by Walmart · free shipping · holiday returns through Jan. 31 · comparison price is retailer-listed'},
@@ -16,7 +20,7 @@ const deals = [
   {name:'LG 32-inch UltraFine 4K Monitor', retailer:'Costco', price:249.99, was:299.99, emoji:'🖥️', condition:'New', category:'Monitors', url:'https://www.costco.com/p/-/4000287902', note:'Online only · valid through Nov. 30 · limit 5'}
 ];
 const currency = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'});
-const filters = ['All','Apple','Headphones','Speakers','Laptops','Monitors','TVs & Home','Gaming','Open-box'];
+const filters = ['All','Apple','Headphones','Speakers','Laptops','Monitors','TVs & Home','Furniture','Vacuums','Cameras','Home Goods','Gaming','Open-box'];
 let active = 'All';
 const template=document.querySelector('#deal-template'); const deck=document.querySelector('#deals'); const search=document.querySelector('#search');
 function discount(d){return Math.round((1-d.price/d.was)*100)}
