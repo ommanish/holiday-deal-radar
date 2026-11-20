@@ -2,13 +2,15 @@ const deals = [
   {name:'Sony WH-1000XM5', retailer:'Best Buy', price:169.99, was:398, emoji:'🎧', condition:'New · Doorbuster', category:'Headphones', url:'https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/J7XSRH5CXG/sku/6505727', note:'Limited quantities · no rainchecks · event ends Nov. 28, 11:59 p.m. CT'},
   {name:'AirPods Max (USB-C), Purple', retailer:'Best Buy', price:261.99, was:549.99, emoji:'🎧', condition:'Open-box', category:'Apple', url:'https://www.bestbuy.com/product/apple-airpods-max-usb-c-purple/JJGCQ3Z422/sku/13175564', note:'Several available locally · free shipping eligible'},
   {name:'Apple AirPods 4', retailer:'Walmart', price:89, was:129.99, emoji:'🎶', condition:'New · Rollback', category:'Headphones', url:'https://www.walmart.com/ip/11381374703', note:'Sold and shipped by Walmart · free shipping · holiday returns through Jan. 31'},
+  {name:'Hisense 75-inch H5R1 4K Roku TV', retailer:'Walmart', price:328, was:668, emoji:'📺', condition:'New · Black Friday', category:'TVs & Home', url:'https://www.walmart.com/ip/20272208349', note:'Sold and shipped by Walmart · free shipping · holiday returns through Jan. 31'},
+  {name:'Samsung 49-inch Odyssey OLED G9 Monitor', retailer:'Best Buy', price:949.99, was:1699.99, emoji:'🖥️', condition:'New · Black Friday', category:'Gaming', url:'https://www.bestbuy.com/product/samsung-49-odyssey-oled-g9-g93sd-series-dqhd-240hz-0-03ms-g-sync-compatible-curved-gaming-monitor-with-hdr-silver/6599654', note:'Limited quantities · no rainchecks · in-store pricing may vary'},
   {name:'Beats Studio Pro', retailer:'Target', price:199, was:349.99, emoji:'🎧', condition:'New', category:'Headphones', url:'https://www.target.com/c/headphones-electronics-tech/all-deals/-/N-5xtegZakkos?type=products', note:'Limited-time Target sale'},
   {name:'AirPods Pro 3', retailer:'Target', price:179.99, was:249.99, emoji:'🎶', condition:'New', category:'Apple', url:'https://www.target.com/c/headphones-electronics-tech/all-deals/-/N-5xtegZakkos?type=products', note:'Pickup and delivery vary by store'},
   {name:'SHOKZ OpenTri Headphones', retailer:'Costco', price:149.99, was:189.99, emoji:'🏃', condition:'New', category:'Headphones', url:'https://www.costco.com/o/-/holiday-savings', note:'Valid through Nov. 30 · limit 5 · membership required'},
   {name:'LG 32-inch UltraFine 4K Monitor', retailer:'Costco', price:249.99, was:299.99, emoji:'🖥️', condition:'New', category:'Tech', url:'https://www.costco.com/o/-/holiday-savings', note:'Online only · valid through Nov. 30 · limit 5'}
 ];
 const currency = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'});
-const filters = ['All','Apple','Headphones','Tech','Open-box'];
+const filters = ['All','Apple','Headphones','TVs & Home','Gaming','Tech','Open-box'];
 let active = 'All';
 const template=document.querySelector('#deal-template'); const deck=document.querySelector('#deals'); const search=document.querySelector('#search');
 function discount(d){return Math.round((1-d.price/d.was)*100)}
