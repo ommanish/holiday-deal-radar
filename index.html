@@ -38,6 +38,10 @@
       <footer><span>DEAL RADAR · BUILT FOR SMART HOLIDAY SHOPPING</span><span>Not affiliated with listed retailers.</span></footer>
     </main>
     <template id="deal-template"><article class="deal-card"><div class="visual"><img class="product-image" alt="" hidden /><span class="emoji" aria-hidden="true"></span><span class="tag"></span></div><div class="deal-copy"><p class="retailer"></p><h2></h2><p class="meta"></p><div class="price-row"><strong class="price"></strong><span class="was"></span></div><p class="saving"></p><a class="shop" target="_blank" rel="noopener">View verified offer <span>↗</span></a></div></article></template>
-    <script src="app.js"></script>
+    <script>
+      const dealScript = document.createElement('script');
+      dealScript.src = `app.js?v=${Date.now()}`;
+      document.body.appendChild(dealScript);
+    </script>
   </body>
 </html>
