@@ -63,7 +63,7 @@ const zipForm=document.querySelector('#zip-form');
 const zipInput=document.querySelector('#zip');
 const zipStatus=document.querySelector('#zip-status');
 function updateZipStatus(){zipInput.value=savedZip;zipStatus.textContent=savedZip?`Using ZIP ${savedZip} for store, pickup and local-delivery checks. Confirm live inventory on the official retailer page.`:'No ZIP saved. Store inventory must be confirmed on the retailer page.'}
-zipForm.addEventListener('submit',event=>{event.preventDefault();const value=zipInput.value.trim();if(!/^\\d{5}$/.test(value)){zipStatus.textContent='Enter a valid 5-digit U.S. ZIP code.';zipInput.focus();return}savedZip=value;localStorage.setItem('dealRadarZip',savedZip);updateZipStatus();draw()});
+zipForm.addEventListener('submit',event=>{event.preventDefault();const value=zipInput.value.trim();if(!/^\d{5}$/.test(value)){zipStatus.textContent='Enter a valid 5-digit U.S. ZIP code.';zipInput.focus();return}savedZip=value;localStorage.setItem('dealRadarZip',savedZip);updateZipStatus();draw()});
 updateZipStatus();
 document.querySelector('#checked').textContent=`Prices checked · ${new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
 draw();
