@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A source-linked watchlist for verified holiday tech, clearance, and doorbuster deals." />
-    <title>Deal Radar · Holiday Tech Watch</title>
+    <meta name="description" content="Verified online and store holiday deals with direct retailer links, real product photos and clear availability." />
+    <title>Deal Radar · Verified Holiday Deals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,36 +12,21 @@
   </head>
   <body>
     <main class="shell">
-      <nav><a class="brand" href="#top">DEAL<span>RADAR</span></a><span class="nav-note">Holiday edition · US</span><div class="nav-links"><a class="nav-link" href="#calendar">Retail calendar</a><a class="nav-link" href="#deals">Live deals</a><a class="nav-link" href="#method">How we verify</a></div></nav>
+      <nav><a class="brand" href="#top">DEAL<span>RADAR</span></a><span class="nav-note">Online-first · US</span><a class="nav-link" href="#method">How we verify</a></nav>
       <header id="top" class="hero">
-        <p class="eyebrow"><i></i> VERIFIED PRICE WATCH</p>
-        <h1>Holiday deals,<br><em>without the noise.</em></h1>
-        <p class="intro">One place for verified Apple, headphones, TVs, computers, cameras, home, and gift deals. Every offer links directly to the retailer and shows the price, condition, availability notes, and terms we could verify.</p>
+        <p class="eyebrow"><i></i> VERIFIED HOLIDAY PRICE WATCH</p>
+        <h1>Real deals.<br><em>Real product photos.</em></h1>
+        <p class="intro">A one-page watchlist of worthwhile online and store offers across Apple, electronics, vacuums, cameras, clothing, furniture and more. Every deal links directly to the official seller.</p>
+        <div class="hero-points"><span>Online deals nationwide</span><span>Store and pickup clearly labeled</span><span>No affiliate links</span></div>
         <div class="status"><span class="live-dot"></span><span id="checked">Loading latest checks…</span></div>
       </header>
-      <section id="calendar" class="calendar" aria-labelledby="calendar-title">
-        <div class="section-heading"><div><p class="eyebrow"><i></i> OFFICIAL RETAIL CALENDAR</p><h2 id="calendar-title">What opens next.</h2></div><p>Published U.S. event dates. Store hours and local inventory near 95124 may vary, so confirm the selected location before traveling.</p></div>
-        <div class="calendar-grid">
-          <a class="calendar-card live" href="https://corporate.bestbuy.com/2026/black-friday-sale-deals/" target="_blank" rel="noopener"><span class="calendar-status">Live now</span><strong>Best Buy</strong><b>Nov. 19–30</b><p>Doorbusters through Nov. 29. Black Friday stores open 6 a.m.; Cyber Week continues Dec. 1–6.</p></a>
-          <a class="calendar-card upcoming" href="https://corporate.target.com/press/fact-sheet/2026/11/holiday-shopping-information" target="_blank" rel="noopener"><span class="calendar-status">Starts Sunday</span><strong>Target</strong><b>Nov. 22–29</b><p>New weekend deals Nov. 26–29. Stores open 6 a.m. on Black Friday.</p></a>
-          <a class="calendar-card upcoming" href="https://corporate.walmart.com/askwalmart/when-are-walmarts-2026-black-friday-and-cyber-monday-deals" target="_blank" rel="noopener"><span class="calendar-status">Starts Monday</span><strong>Walmart</strong><b>Nov. 23–Dec. 2</b><p>Black Friday online at 12:01 a.m. ET; stores open Nov. 27 at 6 a.m. Cyber Monday runs Nov. 30–Dec. 2.</p></a>
-          <a class="calendar-card upcoming" href="https://www.apple.com/shop/gifts/black-friday-event" target="_blank" rel="noopener"><span class="calendar-status">Upcoming</span><strong>Apple</strong><b>Nov. 27–30</b><p>Eligible purchases include an Apple Gift Card worth up to $300. Online, app, phone, and Apple Store.</p></a>
-          <a class="calendar-card upcoming" href="https://www.costco.com/o/-/black-friday" target="_blank" rel="noopener"><span class="calendar-status">Upcoming</span><strong>Costco</strong><b>Nov. 27–30</b><p>Warehouse and online offers; limits and dates vary by item. Costco is closed Thanksgiving.</p></a>
-        </div>
-      </section>
-      <section class="controls" aria-label="Deal filters">
-        <div class="chips" id="filters"></div>
-        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search deals" /></label>
-      </section>
-      <section aria-live="polite"><div class="result-line"><strong id="count">0</strong> verified offers <span>Prices and stock can change at checkout.</span></div><div id="deals" class="deal-grid"></div></section>
-      <section id="method" class="method"><p class="eyebrow"><i></i> OUR STANDARD</p><h2>Useful only when it’s real.</h2><div class="method-grid"><article><b>01</b><h3>Direct sources</h3><p>We link back to the official retailer or brand page—not an affiliate landing page.</p></article><article><b>02</b><h3>Condition upfront</h3><p>Open-box and refurbished products are clearly marked so they are never confused with new items.</p></article><article><b>03</b><h3>No fake savings</h3><p>“Was” prices are shown only when verifiable. Questionable comparison prices are excluded.</p></article></div></section>
-      <footer><span>DEAL RADAR · BUILT FOR SMART HOLIDAY SHOPPING</span><span>Not affiliated with listed retailers.</span></footer>
+      <section class="personal-note"><strong>Local check is secondary.</strong><span>The public page works nationwide. Store inventory can be confirmed separately for ZIP 95124 when needed.</span></section>
+      <section class="controls" aria-label="Deal filters"><div class="chips" id="filters"></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search products or stores" /></label></section>
+      <section aria-live="polite"><div class="result-line"><strong id="count">0</strong> verified offers <span>Prices and stock can change at checkout.</span></div><div id="deals" class="deal-grid"></div><p id="empty" class="empty" hidden>No matching verified offers.</p></section>
+      <section id="method" class="method"><p class="eyebrow"><i></i> OUR STANDARD</p><h2>Useful only when it’s real.</h2><div class="method-grid"><article><b>01</b><h3>Direct sources</h3><p>Every offer links to the official retailer or brand page—never an affiliate redirect.</p></article><article><b>02</b><h3>Availability upfront</h3><p>Online, pickup and store options are labeled separately so shoppers know how the deal can be purchased.</p></article><article><b>03</b><h3>Condition and pricing</h3><p>New and refurbished conditions are explicit, with potentially inflated comparison prices flagged in the card notes.</p></article></div></section>
+      <footer><span>DEAL RADAR · SMARTER HOLIDAY SHOPPING</span><span>Not affiliated with listed retailers.</span></footer>
     </main>
-    <template id="deal-template"><article class="deal-card"><div class="visual"><img class="product-image" alt="" hidden /><span class="emoji" aria-hidden="true"></span><span class="tag"></span></div><div class="deal-copy"><p class="retailer"></p><h2></h2><p class="meta"></p><div class="price-row"><strong class="price"></strong><span class="was"></span></div><p class="saving"></p><a class="shop" target="_blank" rel="noopener">View verified offer <span>↗</span></a></div></article></template>
-    <script>
-      const dealScript = document.createElement('script');
-      dealScript.src = `app.js?v=${Date.now()}`;
-      document.body.appendChild(dealScript);
-    </script>
+    <template id="deal-template"><article class="deal-card"><div class="visual"><img class="product-image" alt="" loading="lazy" decoding="async" /><span class="image-fallback" hidden>Photo temporarily unavailable</span><span class="tag"></span></div><div class="deal-copy"><p class="retailer"></p><h2></h2><div class="availability"></div><p class="ends"></p><p class="meta"></p><div class="price-row"><strong class="price"></strong><span class="was"></span></div><p class="saving"></p><a class="shop" target="_blank" rel="noopener noreferrer">View official offer <span>↗</span></a></div></article></template>
+    <script src="app.js"></script>
   </body>
 </html>
