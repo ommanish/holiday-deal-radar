@@ -22,6 +22,7 @@ const deals = [
 const currency=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'});
 const filters=['All','Apple','Headphones','Vacuums','TVs & Home','Monitors','Cameras','Clothing','Furniture','Refurbished'];
 let active='All';
+let savedZip=localStorage.getItem('dealRadarZip')||'';
 const template=document.querySelector('#deal-template');
 const deck=document.querySelector('#deals');
 const search=document.querySelector('#search');
@@ -45,7 +46,7 @@ function draw(){
     node.querySelector('.meta').textContent=deal.note;
     node.querySelector('.ends').textContent=deal.ends;
     const channelRow=node.querySelector('.availability');
-    deal.channels.forEach(channel=>{const chip=document.createElement('span');chip.textContent=channel;chip.className=channel==='Online'?'availability-chip online':'availability-chip store';channelRow.append(chip)});
+    deal.channels.forEach(channel=>{const chip=document.createElement('span');const isOnline=channel==='Online';chip.textContent=isOnline?channel:(savedZip?`${channel} · check ${savedZip}`:`${channel} · ZIP check`);chip.className=isOnline?'availability-chip online':'availability-chip store';channelRow.append(chip)});
     node.querySelector('.price').textContent=currency.format(deal.price);
     node.querySelector('.was').textContent=`was ${currency.format(deal.was)}`;
     node.querySelector('.saving').textContent=`SAVE ${currency.format(deal.was-deal.price)} · ${discount(deal)}%`;
@@ -58,5 +59,11 @@ function draw(){
 const filterBar=document.querySelector('#filters');
 filters.forEach(filter=>{const button=document.createElement('button');button.className=`chip ${filter==='All'?'active':''}`;button.textContent=filter;button.onclick=()=>{active=filter;document.querySelectorAll('.chip').forEach(chip=>chip.classList.toggle('active',chip.textContent===filter));draw()};filterBar.append(button)});
 search.addEventListener('input',draw);
+const zipForm=document.querySelector('#zip-form');
+const zipInput=document.querySelector('#zip');
+const zipStatus=document.querySelector('#zip-status');
+function updateZipStatus(){zipInput.value=savedZip;zipStatus.textContent=savedZip?`Using ZIP ${savedZip} for store, pickup and local-delivery checks. Confirm live inventory on the official retailer page.`:'No ZIP saved. Store inventory must be confirmed on the retailer page.'}
+zipForm.addEventListener('submit',event=>{event.preventDefault();const value=zipInput.value.trim();if(!/^\\d{5}$/.test(value)){zipStatus.textContent='Enter a valid 5-digit U.S. ZIP code.';zipInput.focus();return}savedZip=value;localStorage.setItem('dealRadarZip',savedZip);updateZipStatus();draw()});
+updateZipStatus();
 document.querySelector('#checked').textContent=`Prices checked · ${new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
 draw();
