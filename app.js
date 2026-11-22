@@ -1,38 +1,30 @@
-const deals = [
-  {name:'Roomba 105 Combo Robot',retailer:'iRobot',price:169.99,was:319.99,image:'https://www.irobot.com/on/demandware.static/-/Sites-master-catalog-irobot/default/dwa6e399dd/images/large/dimensions/imperial/Dimension_labelling_on_images_v2_Imperial_105_combo_black.webp',condition:'New · Black Friday',category:'Vacuums',channels:['Online'],ends:'Ends Nov. 28, 11:59 p.m. ET',url:'https://www.irobot.com/en_US/roomba-105-combo-robot/Y314020.html',note:'Sold directly by iRobot. Ships in 1–2 weeks. Free ground shipping and returns on robots, plus a 60-day home trial.'},
-  {name:'Roomba 105 Combo Robot + AutoEmpty Dock',retailer:'iRobot',price:269.99,was:469.99,image:'https://www.irobot.com/on/demandware.static/-/Sites-master-catalog-irobot/default/dwfc3b47cb/images/large/dimensions/imperial/Dimension_labelling_on_images_v2_Imperial_105_combo_autoempty_black.webp',condition:'New · Black Friday',category:'Vacuums',channels:['Online'],ends:'Ends Nov. 28, 11:59 p.m. ET',url:'https://www.irobot.com/en_US/roomba-105-combo-robot-plus-autoempty-dock/Y354020.html',note:'Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $469.99 is iRobot’s listed reference price.'},
-  {name:'Roomba Max 715 Vac Robot + AutoEmpty Dock',retailer:'iRobot',price:399.99,was:699.99,image:'https://www.irobot-jp.com/product/img/family/260717/roomba-max-715-ae-image.png',condition:'New · Black Friday',category:'Vacuums',channels:['Online'],ends:'Ends Nov. 28, 11:59 p.m. ET',url:'https://www.irobot.com/en_US/roomba-max-715-vac-robot-plus-autoempty-dock/W255020.html',note:'Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $699.99 is iRobot’s listed reference price.'},
-  {name:'Bose QuietComfort Headphones',retailer:'Bose',price:169,was:359,image:'https://assets.bosecreative.com/transform/8ddf13a2-ec61-439e-ba0d-8e231e6b92a4/QCHLE26-TwilightBlue_SF_Gallery_1_Silo_Desktop_3264x2448?format=avif&io=width%3A816%2Cheight%3A667%2Ctransform%3Afit&quality=95',condition:'New · Holiday sale',category:'Headphones',channels:['Online'],ends:'Ends Jan. 3, 2027',url:'https://www.bose.com/p/headphones/quietcomfort-acoustic-noise-cancelling-headphones/QC-HEADPHONEARN.html?dwvar_QC-HEADPHONEARN_color=TWILIGHT+BLUE',note:'Sold directly by Bose with Add to Cart active when checked. Complimentary shipping and returns, extended holiday returns through Jan. 31, and holiday price-match coverage through Jan. 8. $359 is Bose’s original price and may not reflect the recent street price.'},
-  {name:'Bose QuietComfort SC Headphones (2nd Gen)',retailer:'Costco',price:179.99,was:319.99,image:'https://assets.bosecreative.com/transform/aa29447b-dabe-4339-b8d5-ae09fe603897/QCHIILE27-DewMint_PDP_E-Comm_Gallery_1_1500x1120?format=avif&io=width%3A816%2Cheight%3A667%2Ctransform%3Afit&quality=95',condition:'New · Black Friday',category:'Headphones',channels:['Online','Warehouse'],ends:'Price valid through Nov. 30',url:'https://www.costco.com/p/-/4201038052',note:'Sold by Costco; membership required. Online and warehouse offer, limit 5, with selection varying by location. Includes a soft carry case and Costco returns. The $319.99 comparison is derived from Costco’s stated $140 discount, not an independently verified MSRP.'},
-  {name:"Columbia Men's Cascadian Peaks Insulated Jacket",retailer:'Columbia',price:60,was:120,image:'https://columbia.scene7.com/is/image/ColumbiaSportswear2/2125421_023_f_om?wid=1280',condition:'New · Selected color',category:'Clothing',channels:['Online'],ends:'While selected sizes last',url:'https://www.columbia.com/p/mens-cascadian-peaks-insulated-jacket-2125421.html?color=023&size=S',note:'City Grey sale variant sold directly by Columbia. Confirm the chosen color and size because other variants can be full price. Eligible returns within 60 days.'},
-  {name:'Apple Certified Refurbished iPhone 16e 128GB (Unlocked)',retailer:'Apple',price:459,was:599,image:'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-iphone-16e-black-202509?.v=V1BDbkFTZDNiSWFzd0lpYlliN2cvYlhkQzI3UUtUMWd3QTZLREszUDJPUTdwcFlaRm1oWnY5WmlHNkRLUm9oS2JGcXNRQnFCV0w3WVRjTExvdm1ic1lHbVVwWnlmYVFmYUpHVkNodEliVmdXZEdHNUFPR0hYUU12cjI0VlFzM1A&fmt=jpeg&hei=1144&qlt=90&wid=1144',condition:'Apple Certified Refurbished',category:'Apple',channels:['Online'],ends:'Limited refurbished inventory',url:'https://www.apple.com/shop/product/fd0d4ll/a/Refurbished-iPhone-16e-128GB-Black-Unlocked',note:'New battery and outer shell, one-year Apple warranty, AppleCare eligible and 14-day returns. $599 is the original launch price, not a recent street price.'},
-  {name:'Apple Certified Refurbished iPad mini (A17 Pro) 128GB',retailer:'Apple',price:509,was:599,image:'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-ipad-mini-7th-gen-wifi-spacegray-202603?.v=dElmSGF2ODJXckVVcy9wNmZBVXE0WVdGWCtuTUlmNzZWcFdRTVczdVFIYncrZEFJa2sxZ29pNWhNNVROSXZlSU82YVdHUlpvV2IvV1lodWd5a2FJU214YXJFQWFnVmkrMkUzQ3k2TDVtN0hnMHFIR1JLTkp1eWRGcTBUUFoyeGhRRXB6YUhNcms5Z1pYZXdkbUhocnBn&fmt=jpeg&hei=1144&qlt=90&wid=1144',condition:'Apple Certified Refurbished',category:'Apple',channels:['Online'],ends:'Limited refurbished inventory',url:'https://www.apple.com/shop/product/fxn63ll/a/Refurbished-iPad-Mini-A17-Pro-Wi-Fi-128GB-Space-Gray',note:'New battery and outer shell, one-year Apple warranty, AppleCare eligible and 14-day returns. Sold directly by Apple.'},
-  {name:'Apple Certified Refurbished 14-inch MacBook Pro M5',retailer:'Apple',price:1369,was:1599,image:'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-mbp14-m5-spaceblack-202511?.v=dXdxeU1SM0NxV0Nlb3NIeVRObG01SGpGdDQ3MlJ0TWtkZHQyRXBvVWVPSy9kc2VkZk5sZFd2WGM2RVZFVkhsSnV2eTQ1SkZlZU9lQ1FZSE9SaVJ1T0VzWFdoOFdTNXhLWVUxcC9FNFU0K0ZhWmcyL2xKa3RRNnpDTzlRcmw2Ym8&fmt=jpeg&hei=1144&qlt=90&wid=1144',condition:'Apple Certified Refurbished',category:'Apple',channels:['Online'],ends:'Limited refurbished inventory',url:'https://www.apple.com/shop/product/fde04ll/a/Refurbished-14-inch-MacBook-Pro-Apple-M5-chip-with-10%E2%80%91Core-CPU-and-10%E2%80%91Core-GPU-Space-Black',note:'16GB memory and 512GB SSD. One-year Apple warranty, AppleCare eligible and 14-day returns. Sold directly by Apple.'},
-  {name:'Apple iPad (A16) 11-inch Wi‑Fi 128GB',retailer:'Target',price:399.99,was:449.99,image:'https://target.scene7.com/is/image/Target/GUEST_9788221c-732b-424b-841e-b283634cddc9?fmt=pjpeg&hei=600&wid=600',condition:'New · Holiday deal',category:'Apple',channels:['Online','Store / pickup'],ends:'No end date stated',url:'https://www.target.com/p/-/A-85966318',note:'In stock online when checked. Pickup and same-day delivery depend on the selected store. Target electronics return terms apply.'},
-  {name:'Sony WH-1000XM5 Noise-Cancelling Headphones',retailer:'Best Buy',price:169.99,was:398,image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505727_sd.jpg;maxHeight=640;maxWidth=550;format=webp',condition:'New · Holiday deal',category:'Headphones',channels:['Online','Store / pickup'],ends:'Limited-time countdown',url:'https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/6505727',note:'Sold by Best Buy. Shipping and pickup were offered when checked. The $398 comparison is retailer-listed and may not reflect the recent street price.'},
-  {name:'Shark PowerDetect Speed Cordless Stick Vacuum',retailer:'Best Buy',price:199.99,was:499.99,image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6689/6689453_sd.jpg;maxHeight=640;maxWidth=550;format=webp',condition:'New · Top deal',category:'Vacuums',channels:['Online','Store / pickup'],ends:'While supplies last',url:'https://www.bestbuy.com/product/shark-powerdetect-speed-cordless-stick-vacuum-powerful-suction-hepa-filtration-60-min-runtime-carpet-hard-floor-ivory/6689453',note:'Sold by Best Buy with shipping and pickup available. $499.99 is Best Buy’s comparable value and may be higher than the recent street price.'},
-  {name:'Hisense 98-inch QD5 Hi-QLED 4K Fire TV (2026)',retailer:'Best Buy',price:799.99,was:2499.99,image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6685/6685580_sd.jpg;maxHeight=640;maxWidth=550;format=webp',condition:'New · Doorbuster',category:'TVs & Home',channels:['Online','Pickup / delivery'],ends:'Ends Nov. 28, 11:59 p.m. CT',url:'https://www.bestbuy.com/product/hisense-98-class-qd5-hi-qled-series-4k-uhd-smart-fire-tv-2026/6685580',note:'Sold by Best Buy. Large-item pickup and delivery vary by location. $2,499.99 is a retailer comparable value and may not reflect the recent street price.'},
-  {name:'TCL 65-inch S4CF 4K HDR Fire TV (2026)',retailer:'Best Buy',price:329.99,was:469.99,image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6687/6687112_sd.jpg;maxHeight=640;maxWidth=550;format=webp',condition:'New · Holiday deal',category:'TVs & Home',channels:['Online','Pickup / delivery'],ends:'While supplies last',url:'https://www.bestbuy.com/product/tcl-65-s4cf-series-4k-uhd-hdr-smart-tv-with-fire-tv-2026/6687112',note:'Sold by Best Buy. Pickup and delivery were available when checked. The $469.99 comparison is retailer-listed.'},
-  {name:'Samsung 49-inch Odyssey OLED G9 Gaming Monitor',retailer:'Best Buy',price:949.99,was:1699.99,image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6599/6599654_sd.jpg;maxHeight=640;maxWidth=550;format=webp',condition:'New · Black Friday',category:'Monitors',channels:['Online','Store / pickup'],ends:'While supplies last',url:'https://www.bestbuy.com/product/samsung-49-odyssey-oled-g9-g93sd-series-dqhd-240hz-0-03ms-g-sync-compatible-curved-gaming-monitor-with-hdr-silver/6599654',note:'Sold by Best Buy. Open-box options may also appear on the retailer page. $1,699.99 is Best Buy’s comparable value.'},
-  {name:'DJI Osmo Pocket 3 Creator Combo',retailer:'B&H Photo',price:466,was:549,image:'https://static.bhphoto.com/images/smallimages/1698238226_1788803.jpg',condition:'New · Holiday savings',category:'Cameras',channels:['Online'],ends:'No end date stated',url:'https://www.bhphotovideo.com/c/product/1788804-REG/dji_cp_os_00000302_01_osmo_pocket_3_creator.html',note:'In stock when checked. Sold by B&H with free delivery and extended eligible returns through Feb. 1, 2027.'},
-  {name:'Apple AirPods Max (USB-C), Starlight',retailer:'B&H Photo',price:399.99,was:549.99,image:'https://www.att.com/scmsassets/global/accessories/audio/apple/apple-airpods-max-usb-c/carousel/4495t-2.png',condition:'New · Holiday savings',category:'Apple',channels:['Online'],ends:'No end date stated',url:'https://www.bhphotovideo.com/c/product/1852447-REG/apple_mww53am_a_airpods_max_starlight.html',note:'In stock online when checked. B&H is an Apple-authorized dealer. Free delivery and extended eligible returns through Feb. 1, 2027.'},
-  {name:'IKEA MORABO Sofa, Gunnared Light Green / Wood',retailer:'IKEA',price:549,was:799,image:'https://www.ikea.com/us/es/images/products/morabo-sofa-gunnared-verde-claro-madera__0815942_pe773129_s5.jpg',condition:'New · IKEA Family price',category:'Furniture',channels:['Online','Store / delivery'],ends:'Ends Nov. 24 or while supplies last',url:'https://www.ikea.com/us/en/p/morabo-sofa-gunnared-light-green-wood-s09318339/',note:'IKEA Family price. Availability and delivery depend on location. Includes a 10-year limited warranty and IKEA’s eligible 365-day return window.'}
-];
-
+let deals=[];
+let dataUpdatedAt='';
 const currency=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'});
-const filters=['All','Apple','Headphones','Vacuums','TVs & Home','Monitors','Cameras','Clothing','Furniture','Refurbished'];
 let active='All';
 let savedZip=localStorage.getItem('dealRadarZip')||'';
 const template=document.querySelector('#deal-template');
 const deck=document.querySelector('#deals');
 const search=document.querySelector('#search');
+const sortSelect=document.querySelector('#sort');
+
 function discount(deal){return Math.round((1-deal.price/deal.was)*100)}
+function savings(deal){return deal.was-deal.price}
+function sorted(list){
+  const copy=[...list];
+  if(sortSelect.value==='discount')return copy.sort((a,b)=>discount(b)-discount(a));
+  if(sortSelect.value==='savings')return copy.sort((a,b)=>savings(b)-savings(a));
+  if(sortSelect.value==='price-low')return copy.sort((a,b)=>a.price-b.price);
+  if(sortSelect.value==='price-high')return copy.sort((a,b)=>b.price-a.price);
+  return copy.sort((a,b)=>(a.priority||999)-(b.priority||999));
+}
 function draw(){
   const query=search.value.toLowerCase();
-  const visible=deals.filter(deal=>{
+  const filtered=deals.filter(deal=>{
     const matchesFilter=active==='All'||active===deal.category||(active==='Refurbished'&&deal.condition.includes('Refurbished'));
     return matchesFilter&&`${deal.name} ${deal.retailer} ${deal.category}`.toLowerCase().includes(query);
   });
+  const visible=sorted(filtered);
   deck.replaceChildren(...visible.map(deal=>{
     const node=template.content.cloneNode(true);
     const image=node.querySelector('.product-image');
@@ -48,22 +40,52 @@ function draw(){
     const channelRow=node.querySelector('.availability');
     deal.channels.forEach(channel=>{const chip=document.createElement('span');const isOnline=channel==='Online';chip.textContent=isOnline?channel:(savedZip?`${channel} · check ${savedZip}`:`${channel} · ZIP check`);chip.className=isOnline?'availability-chip online':'availability-chip store';channelRow.append(chip)});
     node.querySelector('.price').textContent=currency.format(deal.price);
-    node.querySelector('.was').textContent=`was ${currency.format(deal.was)}`;
-    node.querySelector('.saving').textContent=`SAVE ${currency.format(deal.was-deal.price)} · ${discount(deal)}%`;
+    node.querySelector('.was').textContent=currency.format(deal.was);
+    node.querySelector('.percent').textContent=`${discount(deal)}% off`;
+    node.querySelector('.saving').textContent=`YOU SAVE ${currency.format(savings(deal))}`;
+    const comparison=node.querySelector('.comparison-note');
+    comparison.textContent=deal.comparisonType==='retailer-reference'?'Retailer reference price—review the card note.':'Comparison price verified on the listed source.';
+    comparison.classList.toggle('caution',deal.comparisonType==='retailer-reference');
     node.querySelector('.shop').href=deal.url;
     return node;
   }));
   document.querySelector('#count').textContent=visible.length;
   document.querySelector('#empty').hidden=visible.length!==0;
 }
-const filterBar=document.querySelector('#filters');
-filters.forEach(filter=>{const button=document.createElement('button');button.className=`chip ${filter==='All'?'active':''}`;button.textContent=filter;button.onclick=()=>{active=filter;document.querySelectorAll('.chip').forEach(chip=>chip.classList.toggle('active',chip.textContent===filter));draw()};filterBar.append(button)});
+function buildFilters(){
+  const preferred=['Apple','Headphones','Vacuums','TVs & Home','Monitors','Cameras','Clothing','Furniture'];
+  const available=[...new Set(deals.map(deal=>deal.category))];
+  const categories=preferred.filter(category=>available.includes(category)).concat(available.filter(category=>!preferred.includes(category)).sort());
+  const filters=['All',...categories,'Refurbished'];
+  const filterBar=document.querySelector('#filters');
+  filterBar.replaceChildren();
+  filters.forEach(filter=>{const button=document.createElement('button');button.className=`chip ${filter==='All'?'active':''}`;button.textContent=filter;button.onclick=()=>{active=filter;document.querySelectorAll('.chip').forEach(chip=>chip.classList.toggle('active',chip.textContent===filter));draw()};filterBar.append(button)});
+}
 search.addEventListener('input',draw);
+sortSelect.addEventListener('change',draw);
 const zipForm=document.querySelector('#zip-form');
 const zipInput=document.querySelector('#zip');
 const zipStatus=document.querySelector('#zip-status');
 function updateZipStatus(){zipInput.value=savedZip;zipStatus.textContent=savedZip?`Using ZIP ${savedZip} for store, pickup and local-delivery checks. Confirm live inventory on the official retailer page.`:'No ZIP saved. Store inventory must be confirmed on the retailer page.'}
 zipForm.addEventListener('submit',event=>{event.preventDefault();const value=zipInput.value.trim();if(!/^\d{5}$/.test(value)){zipStatus.textContent='Enter a valid 5-digit U.S. ZIP code.';zipInput.focus();return}savedZip=value;localStorage.setItem('dealRadarZip',savedZip);updateZipStatus();draw()});
 updateZipStatus();
-document.querySelector('#checked').textContent=`Prices checked · ${new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
-draw();
+
+async function loadDeals(){
+  try{
+    const response=await fetch('deals.json?v=20261121-1',{cache:'no-store'});
+    if(!response.ok)throw new Error(`Deal data returned ${response.status}`);
+    const payload=await response.json();
+    if(!Array.isArray(payload.deals))throw new Error('Deal data is invalid');
+    deals=payload.deals;
+    dataUpdatedAt=payload.updatedAt;
+    buildFilters();
+    const checked=new Date(dataUpdatedAt);
+    document.querySelector('#checked').textContent=`Prices checked · ${checked.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
+    draw();
+  }catch(error){
+    document.querySelector('#checked').textContent='Deal data temporarily unavailable';
+    document.querySelector('#empty').hidden=false;
+    document.querySelector('#empty').textContent='We could not load the latest verified deals. Please refresh shortly.';
+  }
+}
+loadDeals();
