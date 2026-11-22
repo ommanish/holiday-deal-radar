@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21T19:30:00-08:00",
+  "updatedAt": "2026-11-21T23:57:00-08:00",
   "currency": "USD",
   "deals": [
     {
@@ -18,8 +18,8 @@
       ],
       "ends": "Ends Nov. 28, 11:59 p.m. ET",
       "url": "https://www.irobot.com/en_US/roomba-105-combo-robot/Y314020.html",
-      "note": "Sold directly by iRobot. Ships in 1–2 weeks. Free ground shipping and returns on robots, plus a 60-day home trial.",
-      "comparisonType": "verified-reference",
+      "note": "Sold directly by iRobot. Ships in 1–2 weeks. Free ground shipping and returns on robots, plus a 60-day home trial The crossed-out price is iRobot’s MSRP/reference price and may not be a price previously offered by iRobot.",
+      "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-21",
       "priority": 1
     },
@@ -38,8 +38,8 @@
       ],
       "ends": "Ends Nov. 28, 11:59 p.m. ET",
       "url": "https://www.irobot.com/en_US/roomba-105-combo-robot-plus-autoempty-dock/Y354020.html",
-      "note": "Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $469.99 is iRobot’s listed reference price.",
-      "comparisonType": "verified-reference",
+      "note": "Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $469.99 is iRobot’s listed reference price The crossed-out price is iRobot’s MSRP/reference price and may not be a price previously offered by iRobot.",
+      "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-21",
       "priority": 2
     },
@@ -58,8 +58,8 @@
       ],
       "ends": "Ends Nov. 28, 11:59 p.m. ET",
       "url": "https://www.irobot.com/en_US/roomba-max-715-vac-robot-plus-autoempty-dock/W255020.html",
-      "note": "Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $699.99 is iRobot’s listed reference price.",
-      "comparisonType": "verified-reference",
+      "note": "Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $699.99 is iRobot’s listed reference price The crossed-out price is iRobot’s MSRP/reference price and may not be a price previously offered by iRobot.",
+      "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-21",
       "priority": 3
     },
@@ -145,6 +145,27 @@
       "priority": 7
     },
     {
+      "id": "best-buy-apple-macbook-air-13-m5-16gb-512gb",
+      "productKey": "apple-macbook-air-13-m5-16gb-512gb",
+      "name": "Apple MacBook Air 13-inch (M5, 16GB, 512GB)",
+      "retailer": "Best Buy",
+      "price": 1049,
+      "was": 1299,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397846_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Black Friday",
+      "category": "Apple",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Ends Nov. 28, 11:59 p.m. CT",
+      "url": "https://www.bestbuy.com/product/apple-macbook-air-13-inch-laptop-m5-chip-with-10-core-cpu-and-8-core-gpu-16gb-memory-512/JJGCQLKXL7",
+      "note": "Midnight configuration, model MDHE4LL/A, sold by Best Buy. Add to Cart was active when checked; shipping and pickup depend on location. $1,299 is Best Buy’s comparable value.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-21",
+      "priority": 8
+    },
+    {
       "id": "apple-apple-certified-refurbished-ipad-mini-a17-pro-128gb",
       "productKey": "apple-certified-refurbished-ipad-mini-128gb",
       "name": "Apple Certified Refurbished iPad mini (A17 Pro) 128GB",
@@ -162,7 +183,7 @@
       "note": "New battery and outer shell, one-year Apple warranty, AppleCare eligible and 14-day returns. Sold directly by Apple.",
       "comparisonType": "verified-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 8
+      "priority": 9
     },
     {
       "id": "apple-apple-certified-refurbished-14-inch-macbook-pro-m5",
@@ -182,7 +203,7 @@
       "note": "16GB memory and 512GB SSD. One-year Apple warranty, AppleCare eligible and 14-day returns. Sold directly by Apple.",
       "comparisonType": "verified-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 9
+      "priority": 10
     },
     {
       "id": "target-apple-ipad-a16-11-inch-wifi-128gb",
@@ -203,7 +224,28 @@
       "note": "In stock online when checked. Pickup and same-day delivery depend on the selected store. Target electronics return terms apply.",
       "comparisonType": "verified-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 10
+      "priority": 11
+    },
+    {
+      "id": "best-buy-tcl-65-inch-s4cf-4k-hdr-fire-tv-2026",
+      "productKey": "tcl-65-inch-s4cf-4k-hdr-fire-tv",
+      "name": "TCL 65-inch S4CF 4K HDR Fire TV (2026)",
+      "retailer": "Best Buy",
+      "price": 229.99,
+      "was": 469.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6687/6687112_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Doorbuster",
+      "category": "TVs & Home",
+      "channels": [
+        "Online",
+        "Pickup / delivery"
+      ],
+      "ends": "Ends Nov. 28, 11:59 p.m. CT",
+      "url": "https://www.bestbuy.com/product/tcl-65-s4cf-series-4k-uhd-hdr-smart-tv-with-fire-tv-2026/6687112",
+      "note": "Sold by Best Buy with pickup and delivery offered when checked. $469.99 is Best Buy’s comparable value and may not reflect the recent street price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-21",
+      "priority": 12
     },
     {
       "id": "best-buy-sony-wh-1000xm5-noise-cancelling-headphones",
@@ -224,7 +266,28 @@
       "note": "Sold by Best Buy. Shipping and pickup were offered when checked. The $398 comparison is retailer-listed and may not reflect the recent street price.",
       "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 11
+      "priority": 13
+    },
+    {
+      "id": "best-buy-hp-omnibook-5-14-oled-256gb",
+      "productKey": "hp-omnibook-5-14-oled-256gb",
+      "name": "HP OmniBook 5 14-inch 2K OLED Touch Laptop",
+      "retailer": "Best Buy",
+      "price": 449.99,
+      "was": 799.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6690/6690110_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Doorbuster",
+      "category": "Computers",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Ends Nov. 28, 11:59 p.m. CT",
+      "url": "https://www.bestbuy.com/product/hp-omnibook-5-14-2k-oled-touchscreen-laptop-intel-core-5-series-3-2026-8gb-memory-256gb-ssd-starlit-blue/6690110",
+      "note": "8GB memory and 256GB SSD, sold by Best Buy. Current Black Friday listing showed shipping and pickup available; check ZIP/store. $799.99 is Best Buy’s comparable value.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-21",
+      "priority": 14
     },
     {
       "id": "best-buy-shark-powerdetect-speed-cordless-stick-vacuum",
@@ -245,7 +308,7 @@
       "note": "Sold by Best Buy with shipping and pickup available. $499.99 is Best Buy’s comparable value and may be higher than the recent street price.",
       "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 12
+      "priority": 15
     },
     {
       "id": "best-buy-hisense-98-inch-qd5-hi-qled-4k-fire-tv-2026",
@@ -266,28 +329,7 @@
       "note": "Sold by Best Buy. Large-item pickup and delivery vary by location. $2,499.99 is a retailer comparable value and may not reflect the recent street price.",
       "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 13
-    },
-    {
-      "id": "best-buy-tcl-65-inch-s4cf-4k-hdr-fire-tv-2026",
-      "productKey": "tcl-65-inch-s4cf-4k-hdr-fire-tv",
-      "name": "TCL 65-inch S4CF 4K HDR Fire TV (2026)",
-      "retailer": "Best Buy",
-      "price": 329.99,
-      "was": 469.99,
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6687/6687112_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
-      "condition": "New · Holiday deal",
-      "category": "TVs & Home",
-      "channels": [
-        "Online",
-        "Pickup / delivery"
-      ],
-      "ends": "While supplies last",
-      "url": "https://www.bestbuy.com/product/tcl-65-s4cf-series-4k-uhd-hdr-smart-tv-with-fire-tv-2026/6687112",
-      "note": "Sold by Best Buy. Pickup and delivery were available when checked. The $469.99 comparison is retailer-listed.",
-      "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 14
+      "priority": 16
     },
     {
       "id": "best-buy-samsung-49-inch-odyssey-oled-g9-gaming-monitor",
@@ -308,7 +350,7 @@
       "note": "Sold by Best Buy. Open-box options may also appear on the retailer page. $1,699.99 is Best Buy’s comparable value.",
       "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 15
+      "priority": 17
     },
     {
       "id": "bh-photo-dji-osmo-pocket-3-creator-combo",
@@ -328,7 +370,28 @@
       "note": "In stock when checked. Sold by B&H with free delivery and extended eligible returns through Feb. 1, 2027.",
       "comparisonType": "verified-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 16
+      "priority": 18
+    },
+    {
+      "id": "best-buy-ring-battery-doorbell-2k-2026",
+      "productKey": "ring-battery-doorbell-2k-2026",
+      "name": "Ring Battery Doorbell 2K (2026)",
+      "retailer": "Best Buy",
+      "price": 39.99,
+      "was": 99.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6672/6672491_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Holiday deal",
+      "category": "Smart Home",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Ends Nov. 28 or while supplies last",
+      "url": "https://www.bestbuy.com/product/ring-battery-doorbell-2k-2026-retinal-2k-wide-angle-video-6x-enhanced-zoom-two-way-talk-and-built-in-battery-mocha/6672491",
+      "note": "Mocha model sold by Best Buy. Shipping and pickup were available when checked; Ring Protect subscription is optional and sold separately. $99.99 is Best Buy’s comparable value.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-21",
+      "priority": 19
     },
     {
       "id": "bh-photo-apple-airpods-max-usb-c-starlight",
@@ -348,7 +411,28 @@
       "note": "In stock online when checked. B&H is an Apple-authorized dealer. Free delivery and extended eligible returns through Feb. 1, 2027.",
       "comparisonType": "verified-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 17
+      "priority": 20
+    },
+    {
+      "id": "best-buy-dyson-v10-konical-cordless-vacuum",
+      "productKey": "dyson-v10-konical-cordless-vacuum",
+      "name": "Dyson V10 Konical Cordless Vacuum",
+      "retailer": "Best Buy",
+      "price": 349.99,
+      "was": 499.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6675/6675166_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Doorbuster",
+      "category": "Vacuums",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Ends Nov. 28 or while supplies last",
+      "url": "https://www.bestbuy.com/product/dyson-v10-konical-newest-model-cordless-vacuum-black-blue/6675166",
+      "note": "Sold by Best Buy with Add to Cart active when checked. Includes Dyson’s two-year limited warranty; shipping and pickup vary by ZIP/store. $499.99 is Best Buy’s comparable value.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-21",
+      "priority": 21
     },
     {
       "id": "ikea-ikea-morabo-sofa-gunnared-light-green-wood",
@@ -369,7 +453,7 @@
       "note": "IKEA Family price. Availability and delivery depend on location. Includes a 10-year limited warranty and IKEA’s eligible 365-day return window.",
       "comparisonType": "verified-reference",
       "verifiedAt": "2026-11-21",
-      "priority": 18
+      "priority": 22
     }
   ]
 }
