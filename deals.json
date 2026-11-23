@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T06:31:58.306Z",
+  "updatedAt": "2026-11-23T08:00:13.163Z",
   "currency": "USD",
   "deals": [
     {
@@ -517,26 +517,6 @@
       "priority": 25
     },
     {
-      "id": "best-buy-aurzen-google-tv-smart-projector",
-      "productKey": "aurzen-google-tv-smart-projector-1000-lumens",
-      "name": "Aurzen Google TV Smart Projector",
-      "retailer": "Best Buy",
-      "price": 299.99,
-      "was": 549.99,
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1196/11968888_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
-      "condition": "New · Holiday deal",
-      "category": "Projectors",
-      "channels": [
-        "Online"
-      ],
-      "ends": "Best Buy Black Friday event ends Nov. 28, 11:59 p.m. CT",
-      "url": "https://www.bestbuy.com/product/aurzen-google-tv-smart-projector-4k-supported-home-theater-1000-ansi-lumens-20w-dolby-audio-memc-tech-fully-automatic-black/J3R8FCG6X4/sku/11968888",
-      "note": "Sold through Best Buy with free shipping shown when checked; pickup was unavailable. Native resolution is 1080p and it accepts supported 4K input. $549.99 is Best Buy’s comparable value and may not reflect the recent street price.",
-      "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 26
-    },
-    {
       "id": "best-buy-canon-eos-rebel-t7-two-lens-kit",
       "productKey": "canon-eos-rebel-t7-two-lens-kit",
       "name": "Canon EOS Rebel T7 DSLR Two-Lens Kit",
@@ -598,6 +578,27 @@
       "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-22",
       "priority": 29
+    },
+    {
+      "id": "target-beats-solo-4-bright-pink",
+      "productKey": "beats-solo-4-bright-pink",
+      "name": "Beats Solo 4 Wireless On-Ear Headphones",
+      "retailer": "Target",
+      "price": 79.99,
+      "was": 199.99,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_09de02ae-b993-4206-b22d-a6fa3f3d91f2?fmt=pjpeg&hei=600&wid=600",
+      "condition": "New · Black Friday · Bright Pink",
+      "category": "Headphones",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Target Black Friday event ends Nov. 29",
+      "url": "https://www.target.com/p/beats-solo-4-bluetooth-wireless-on-ear-headphones-bright-pink/-/A-1012454303",
+      "note": "Bright Pink model was in stock with Add to Cart active on Target’s product page. Shipping, pickup and same-day availability vary by ZIP/store. Target lists a 14-day return window and a one-year limited warranty. $199.99 is Target’s regular/reference price and may not reflect the recent street price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 26
     }
   ]
 }
