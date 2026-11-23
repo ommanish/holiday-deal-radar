@@ -72,7 +72,7 @@ updateZipStatus();
 
 async function loadDeals(){
   try{
-    const response=await fetch('deals.json?v=20261121-1',{cache:'no-store'});
+    const response=await fetch(`deals.json?v=${Date.now()}`,{cache:'no-store'});
     if(!response.ok)throw new Error(`Deal data returned ${response.status}`);
     const payload=await response.json();
     if(!Array.isArray(payload.deals))throw new Error('Deal data is invalid');
