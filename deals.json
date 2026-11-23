@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21T23:57:00-08:00",
+  "updatedAt": "2026-11-22T22:30:00-08:00",
   "currency": "USD",
   "deals": [
     {
@@ -454,6 +454,87 @@
       "comparisonType": "verified-reference",
       "verifiedAt": "2026-11-21",
       "priority": 22
+    },
+    {
+      "id": "target-apple-airpods-pro-3",
+      "productKey": "apple-airpods-pro-3",
+      "name": "Apple AirPods Pro 3",
+      "retailer": "Target",
+      "price": 169.99,
+      "was": 249.99,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_d1b8c229-751b-430b-a0fb-521d7777a784?fmt=pjpeg&hei=600&wid=600",
+      "condition": "New · Black Friday",
+      "category": "Apple",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Target Black Friday event ends Nov. 29",
+      "url": "https://www.target.com/p/ap2022-true-wireless-bluetooth-headphones/-/A-85978609",
+      "note": "Sold and fulfilled directly by Target, factory sealed and in stock when checked. Shipping, pickup and same-day delivery vary by ZIP/store. Target lists a 14-day electronics return window and Apple’s one-year limited warranty.",
+      "comparisonType": "verified-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 23
+    },
+    {
+      "id": "anker-zolo-magnetic-power-bank-10k-30w",
+      "productKey": "anker-zolo-magnetic-power-bank-10k-30w",
+      "name": "Anker Zolo Magnetic Power Bank 10K (30W)",
+      "retailer": "Anker",
+      "price": 37.99,
+      "was": 49.99,
+      "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/A1685011_Rich_image_TD01_US_V1_3c77e0e9-ed80-4e31-a8f8-cdff9e4644a3.png?v=1753960984&width=1200",
+      "condition": "New · Black Friday",
+      "category": "Chargers & Accessories",
+      "channels": [
+        "Online"
+      ],
+      "ends": "Anker Black Friday event runs through Dec. 7; while supplies last",
+      "url": "https://www.anker.com/products/a1685?variant=44427833213078",
+      "note": "Sold directly by Anker and in stock when checked, with estimated delivery in 3–7 business days. Includes fast free shipping, a 30-day money-back guarantee and Anker warranty support. The $49.99 comparison is Anker’s listed regular price.",
+      "comparisonType": "verified-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 24
+    },
+    {
+      "id": "belkin-boostcharge-pro-2-in-1-qi2-15w-dock",
+      "productKey": "belkin-boostcharge-pro-2-in-1-qi2-15w-dock",
+      "name": "Belkin BoostCharge Pro 2-in-1 Qi2 15W Dock",
+      "retailer": "Belkin",
+      "price": 59.99,
+      "was": 119.99,
+      "image": "https://www.belkin.com/dw/image/v2/BGBH_PRD/on/demandware.static/-/Sites-master-product-catalog-blk/default/dw50d08337/images/hi-res/4/4b7cfe9b147d8925_WIZ020ttH36_Hero_Shot1_WEB.jpg?sfrm=png&sh=700&sm=fit&sw=700",
+      "condition": "New · Sale",
+      "category": "Chargers & Accessories",
+      "channels": [
+        "Online"
+      ],
+      "ends": "No end date stated; while supplies last",
+      "url": "https://www.belkin.com/p/2-in-1-wireless-charging-dock-with-qi2-15w/WIZ027ttH36.html",
+      "note": "Sold directly by Belkin with Add to Cart active when checked. Includes a 30W power supply and cable, a two-year warranty and 30-day money-back guarantee. Free standard shipping requires a $75 order. $119.99 is Belkin’s listed reference price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 25
+    },
+    {
+      "id": "best-buy-aurzen-google-tv-smart-projector",
+      "productKey": "aurzen-google-tv-smart-projector-1000-lumens",
+      "name": "Aurzen Google TV Smart Projector",
+      "retailer": "Best Buy",
+      "price": 299.99,
+      "was": 549.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1196/11968888_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Holiday deal",
+      "category": "Projectors",
+      "channels": [
+        "Online"
+      ],
+      "ends": "Best Buy Black Friday event ends Nov. 28, 11:59 p.m. CT",
+      "url": "https://www.bestbuy.com/product/aurzen-google-tv-smart-projector-4k-supported-home-theater-1000-ansi-lumens-20w-dolby-audio-memc-tech-fully-automatic-black/J3R8FCG6X4/sku/11968888",
+      "note": "Sold through Best Buy with free shipping shown when checked; pickup was unavailable. Native resolution is 1080p and it accepts supported 4K input. $549.99 is Best Buy’s comparable value and may not reflect the recent street price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 26
     }
   ]
 }
