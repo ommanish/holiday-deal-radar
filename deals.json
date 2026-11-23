@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T08:00:13.163Z",
+  "updatedAt": "2026-11-23T08:01:25.496Z",
   "currency": "USD",
   "deals": [
     {
@@ -109,7 +109,7 @@
       "productKey": "columbia-mens-cascadian-peaks-insulated-jacket",
       "name": "Columbia Men's Cascadian Peaks Insulated Jacket",
       "retailer": "Columbia",
-      "price": 60,
+      "price": 72,
       "was": 120,
       "image": "https://columbia.scene7.com/is/image/ColumbiaSportswear2/2125421_023_f_om?wid=1280",
       "condition": "New · Selected color",
@@ -119,9 +119,9 @@
       ],
       "ends": "While selected sizes last",
       "url": "https://www.columbia.com/p/mens-cascadian-peaks-insulated-jacket-2125421.html?color=023&size=S",
-      "note": "City Grey sale variant sold directly by Columbia. Confirm the chosen color and size because other variants can be full price. Eligible returns within 60 days.",
-      "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
+      "note": "City Grey variant sold directly by Columbia at $72 when rechecked. Confirm the chosen color and size because pricing can vary by variant. Eligible returns within 60 days. $120 is Columbia’s listed original/reference price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-22",
       "priority": 6
     },
     {
