@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T22:30:00-08:00",
+  "updatedAt": "2026-11-23T06:31:58.306Z",
   "currency": "USD",
   "deals": [
     {
@@ -535,6 +535,69 @@
       "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-22",
       "priority": 26
+    },
+    {
+      "id": "best-buy-canon-eos-rebel-t7-two-lens-kit",
+      "productKey": "canon-eos-rebel-t7-two-lens-kit",
+      "name": "Canon EOS Rebel T7 DSLR Two-Lens Kit",
+      "retailer": "Best Buy",
+      "price": 499.99,
+      "was": 699.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323759_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Black Friday",
+      "category": "Cameras",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Best Buy Black Friday event ends Nov. 28, 11:59 p.m. CT",
+      "url": "https://www.bestbuy.com/product/canon-eos-rebel-t7-dslr-video-two-lens-kit-with-ef-s-18-55mm-and-ef-75-300mm-lenses-black/JXL8XXCR6G",
+      "note": "Includes the EF-S 18–55mm and EF 75–300mm lenses. Best Buy’s current Black Friday listing showed shipping and pickup available; availability varies by ZIP/store. $699.99 is Best Buy’s comparable value.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 27
+    },
+    {
+      "id": "home-depot-lg-28-cu-ft-french-door-refrigerator",
+      "productKey": "lg-lhfs28xbs-french-door-refrigerator",
+      "name": "LG 28-cu.-ft. French-Door Refrigerator",
+      "retailer": "Home Depot",
+      "price": 1699,
+      "was": 3099,
+      "image": "https://images.thdstatic.com/productImages/239f6aa5-23ac-454f-950b-44a0f67a5125/svn/printproof-stainless-steel-lg-french-door-refrigerators-lhfs28xbs-64_600.jpg",
+      "condition": "New · Black Friday",
+      "category": "Appliances",
+      "channels": [
+        "Online",
+        "Store / delivery"
+      ],
+      "ends": "Home Depot Black Friday event runs through Dec. 2; while supplies last",
+      "url": "https://www.homedepot.com/p/LG-36-in-28-cu-ft-3-Door-French-Door-Refrigerator-w-Ice-and-Water-Dispenser-and-Craft-Ice-in-PrintProof-Stainless-Steel-LHFS28XBS/325158253",
+      "note": "Model LHFS28XBS, sold by Home Depot. The live page showed a limit of 6. Delivery, installation, haul-away and local availability require a ZIP check. $3,099 is Home Depot’s listed former/reference price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 28
+    },
+    {
+      "id": "target-nba-2k27-playstation-5",
+      "productKey": "nba-2k27-playstation-5",
+      "name": "NBA 2K27 – PlayStation 5",
+      "retailer": "Target",
+      "price": 29.99,
+      "was": 67.99,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c89f307b-0dcf-44b7-b426-7c841d989f2f?fmt=pjpeg&hei=600&wid=600",
+      "condition": "New · Black Friday",
+      "category": "Gaming",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Target Black Friday event ends Nov. 29",
+      "url": "https://www.target.com/p/mcb-27-playstation-5/-/A-1012695231",
+      "note": "Physical PS5 edition sold directly by Target and in stock when checked. Shipping, pickup and same-day availability vary by ZIP/store. Target lists a 30-day return window. $67.99 is Target’s regular/reference price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-22",
+      "priority": 29
     }
   ]
 }
