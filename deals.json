@@ -1,8 +1,112 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T08:01:25.496Z",
+  "updatedAt": "2026-11-24T08:09:49.218Z",
   "currency": "USD",
   "deals": [
+    {
+      "id": "best-buy-apple-airpods-pro-3",
+      "productKey": "apple-airpods-pro-3",
+      "name": "Apple AirPods Pro 3",
+      "retailer": "Best Buy",
+      "price": 149.99,
+      "was": 249.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6376/6376563_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Black Friday",
+      "category": "Headphones",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Ends Nov. 28, 11:59 p.m. CT or while supplies last",
+      "url": "https://www.bestbuy.com/product/db/6376563",
+      "note": "Sold directly by Best Buy. Add-to-cart availability confirmed for shipping and pickup; local inventory requires a ZIP/store check. Best Buy lists $249.99 as the comparable value. Limited quantities; no rainchecks.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 1
+    },
+    {
+      "id": "walmart-beats-studio-pro-matte-white",
+      "productKey": "beats-studio-pro",
+      "name": "Beats Studio Pro Wireless Headphones — Matte White",
+      "retailer": "Walmart",
+      "price": 99,
+      "was": 299,
+      "image": "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/pdp/studiopro-pdp-p01.jpg.large.2x.jpg",
+      "condition": "New · Black Friday",
+      "category": "Headphones",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Walmart Black Friday event ends Nov. 29; while supplies last",
+      "url": "https://www.walmart.com/ip/20630967817?classType=VARIANT",
+      "note": "Sold and shipped by Walmart.com. Matte White variant was add-to-cart eligible with shipping and pickup; ZIP/store check required. Free holiday returns through Jan. 31. Walmart's $299 reference may overstate savings because other colors were listed near $149.95.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 2
+    },
+    {
+      "id": "target-dyson-v9-motorbar-cordless-vacuum",
+      "productKey": "dyson-v9-motorbar-cordless-vacuum",
+      "name": "Dyson V9 Motorbar Cordless Vacuum",
+      "retailer": "Target",
+      "price": 269.99,
+      "was": 599.99,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_025a29bc-0bb4-48e6-ad89-0f2fb25ecd56?fmt=pjpeg&hei=600&wid=600",
+      "condition": "New · Black Friday",
+      "category": "Vacuums",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Target Black Friday event ends Nov. 29; while supplies last",
+      "url": "https://www.target.com/p/-/A-1011912746",
+      "note": "Sold directly by Target. In stock with add-to-cart availability; shipping and pickup vary by ZIP/store. Target lists $599.99 as the regular price, so the claimed 55% savings use a retailer reference price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 3
+    },
+    {
+      "id": "walmart-vizio-4-1-pro-soundbar",
+      "productKey": "vizio-sv410yw-10-soundbar",
+      "name": "VIZIO 4.1 Pro Soundbar with Wireless Subwoofer",
+      "retailer": "Walmart",
+      "price": 79,
+      "was": 148,
+      "image": "https://www.vizio.com/content/dam/vizio/us/en/images/product/2026/soundbar/sv410yw-1008/gallery/SV410YW-1008_Combo_Top.jpg/_jcr_content/renditions/cq5dam.web.640.480.png",
+      "condition": "New · Black Friday",
+      "category": "TVs & Home",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Walmart Black Friday event ends Nov. 29; while supplies last",
+      "url": "https://www.walmart.com/ip/20104913010?classType=REGULAR",
+      "note": "Sold and shipped by Walmart.com. Add-to-cart availability confirmed for shipping, pickup and local delivery subject to ZIP/store. Free holiday returns through Jan. 31. Manufacturer lists a one-year parts-and-labor warranty.",
+      "comparisonType": "verified-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 4
+    },
+    {
+      "id": "irobot-roomba-max-875-combo-autowash-dock",
+      "productKey": "roomba-max-875-combo-autowash-dock",
+      "name": "Roomba Max 875 Combo Robot + AutoWash Dock",
+      "retailer": "iRobot",
+      "price": 799.99,
+      "was": 1199.99,
+      "image": "https://www.irobot.com/dw/image/v2/BFXP_PRD/on/demandware.static/-/Sites-master-catalog-irobot/default/dwcd6aab23/images/large/combo/Z185020/Z185020_0_CES.jpg?fmt=auto&sw=700",
+      "condition": "New · Black Friday",
+      "category": "Vacuums",
+      "channels": [
+        "Online"
+      ],
+      "ends": "Ends Nov. 28, 11:59 p.m. ET",
+      "url": "https://www.irobot.com/en_US/roomba-max-875-combo-robot-plus-autowash-dock/Z185020.html",
+      "note": "Sold directly by iRobot and in stock. Includes free shipping and returns on robots plus a 60-day home trial. The crossed-out $1,199.99 is iRobot's MSRP/reference price; iRobot states it may not be a price previously offered.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 5
+    },
     {
       "id": "irobot-roomba-105-combo-robot",
       "productKey": "roomba-105-combo-robot",
@@ -20,8 +124,8 @@
       "url": "https://www.irobot.com/en_US/roomba-105-combo-robot/Y314020.html",
       "note": "Sold directly by iRobot. Ships in 1–2 weeks. Free ground shipping and returns on robots, plus a 60-day home trial The crossed-out price is iRobot’s MSRP/reference price and may not be a price previously offered by iRobot.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 1
+      "verifiedAt": "2026-11-24",
+      "priority": 6
     },
     {
       "id": "irobot-roomba-105-combo-robot-autoempty-dock",
@@ -40,8 +144,8 @@
       "url": "https://www.irobot.com/en_US/roomba-105-combo-robot-plus-autoempty-dock/Y354020.html",
       "note": "Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $469.99 is iRobot’s listed reference price The crossed-out price is iRobot’s MSRP/reference price and may not be a price previously offered by iRobot.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 2
+      "verifiedAt": "2026-11-24",
+      "priority": 7
     },
     {
       "id": "irobot-roomba-max-715-vac-robot-autoempty-dock",
@@ -60,8 +164,8 @@
       "url": "https://www.irobot.com/en_US/roomba-max-715-vac-robot-plus-autoempty-dock/W255020.html",
       "note": "Sold directly by iRobot and in stock when checked. Free ground shipping and returns on robots, plus a 60-day home trial. $699.99 is iRobot’s listed reference price The crossed-out price is iRobot’s MSRP/reference price and may not be a price previously offered by iRobot.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 3
+      "verifiedAt": "2026-11-24",
+      "priority": 8
     },
     {
       "id": "bose-bose-quietcomfort-headphones",
@@ -80,8 +184,8 @@
       "url": "https://www.bose.com/p/headphones/quietcomfort-acoustic-noise-cancelling-headphones/QC-HEADPHONEARN.html?dwvar_QC-HEADPHONEARN_color=TWILIGHT+BLUE",
       "note": "Sold directly by Bose with Add to Cart active when checked. Complimentary shipping and returns, extended holiday returns through Jan. 31, and holiday price-match coverage through Jan. 8. $359 is Bose’s original price and may not reflect the recent street price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 4
+      "verifiedAt": "2026-11-24",
+      "priority": 9
     },
     {
       "id": "costco-bose-quietcomfort-sc-headphones-2nd-gen",
@@ -101,8 +205,8 @@
       "url": "https://www.costco.com/p/-/4201038052",
       "note": "Sold by Costco; membership required. Online and warehouse offer, limit 5, with selection varying by location. Includes a soft carry case and Costco returns. The $319.99 comparison is derived from Costco’s stated $140 discount, not an independently verified MSRP.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 5
+      "verifiedAt": "2026-11-24",
+      "priority": 10
     },
     {
       "id": "columbia-columbia-mens-cascadian-peaks-insulated-jacket",
@@ -121,8 +225,8 @@
       "url": "https://www.columbia.com/p/mens-cascadian-peaks-insulated-jacket-2125421.html?color=023&size=S",
       "note": "City Grey variant sold directly by Columbia at $72 when rechecked. Confirm the chosen color and size because pricing can vary by variant. Eligible returns within 60 days. $120 is Columbia’s listed original/reference price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 6
+      "verifiedAt": "2026-11-24",
+      "priority": 11
     },
     {
       "id": "apple-apple-certified-refurbished-iphone-16e-128gb-unlocked",
@@ -141,8 +245,8 @@
       "url": "https://www.apple.com/shop/product/fd0d4ll/a/Refurbished-iPhone-16e-128GB-Black-Unlocked",
       "note": "New battery and outer shell, one-year Apple warranty, AppleCare eligible and 14-day returns. $599 is the original launch price, not a recent street price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 7
+      "verifiedAt": "2026-11-24",
+      "priority": 12
     },
     {
       "id": "best-buy-apple-macbook-air-13-m5-16gb-512gb",
@@ -162,8 +266,8 @@
       "url": "https://www.bestbuy.com/product/apple-macbook-air-13-inch-laptop-m5-chip-with-10-core-cpu-and-8-core-gpu-16gb-memory-512/JJGCQLKXL7",
       "note": "Midnight configuration, model MDHE4LL/A, sold by Best Buy. Add to Cart was active when checked; shipping and pickup depend on location. $1,299 is Best Buy’s comparable value.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 8
+      "verifiedAt": "2026-11-24",
+      "priority": 13
     },
     {
       "id": "apple-apple-certified-refurbished-ipad-mini-a17-pro-128gb",
@@ -182,8 +286,8 @@
       "url": "https://www.apple.com/shop/product/fxn63ll/a/Refurbished-iPad-Mini-A17-Pro-Wi-Fi-128GB-Space-Gray",
       "note": "New battery and outer shell, one-year Apple warranty, AppleCare eligible and 14-day returns. Sold directly by Apple.",
       "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 9
+      "verifiedAt": "2026-11-24",
+      "priority": 14
     },
     {
       "id": "apple-apple-certified-refurbished-14-inch-macbook-pro-m5",
@@ -202,15 +306,15 @@
       "url": "https://www.apple.com/shop/product/fde04ll/a/Refurbished-14-inch-MacBook-Pro-Apple-M5-chip-with-10%E2%80%91Core-CPU-and-10%E2%80%91Core-GPU-Space-Black",
       "note": "16GB memory and 512GB SSD. One-year Apple warranty, AppleCare eligible and 14-day returns. Sold directly by Apple.",
       "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 10
+      "verifiedAt": "2026-11-24",
+      "priority": 15
     },
     {
       "id": "target-apple-ipad-a16-11-inch-wifi-128gb",
       "productKey": "apple-ipad-11-inch-wifi-128gb",
       "name": "Apple iPad (A16) 11-inch Wi‑Fi 128GB",
       "retailer": "Target",
-      "price": 399.99,
+      "price": 379.99,
       "was": 449.99,
       "image": "https://target.scene7.com/is/image/Target/GUEST_9788221c-732b-424b-841e-b283634cddc9?fmt=pjpeg&hei=600&wid=600",
       "condition": "New · Holiday deal",
@@ -221,10 +325,10 @@
       ],
       "ends": "No end date stated",
       "url": "https://www.target.com/p/-/A-85966318",
-      "note": "In stock online when checked. Pickup and same-day delivery depend on the selected store. Target electronics return terms apply.",
+      "note": "Sold directly by Target. In stock with shipping and pickup availability subject to ZIP/store selection. Target lists $449.99 as the regular price; current live price verified at $379.99.",
       "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 11
+      "verifiedAt": "2026-11-24",
+      "priority": 16
     },
     {
       "id": "best-buy-tcl-65-inch-s4cf-4k-hdr-fire-tv-2026",
@@ -244,8 +348,8 @@
       "url": "https://www.bestbuy.com/product/tcl-65-s4cf-series-4k-uhd-hdr-smart-tv-with-fire-tv-2026/6687112",
       "note": "Sold by Best Buy with pickup and delivery offered when checked. $469.99 is Best Buy’s comparable value and may not reflect the recent street price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 12
+      "verifiedAt": "2026-11-24",
+      "priority": 17
     },
     {
       "id": "best-buy-sony-wh-1000xm5-noise-cancelling-headphones",
@@ -265,8 +369,8 @@
       "url": "https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/6505727",
       "note": "Sold by Best Buy. Shipping and pickup were offered when checked. The $398 comparison is retailer-listed and may not reflect the recent street price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 13
+      "verifiedAt": "2026-11-24",
+      "priority": 18
     },
     {
       "id": "best-buy-hp-omnibook-5-14-oled-256gb",
@@ -286,8 +390,8 @@
       "url": "https://www.bestbuy.com/product/hp-omnibook-5-14-2k-oled-touchscreen-laptop-intel-core-5-series-3-2026-8gb-memory-256gb-ssd-starlit-blue/6690110",
       "note": "8GB memory and 256GB SSD, sold by Best Buy. Current Black Friday listing showed shipping and pickup available; check ZIP/store. $799.99 is Best Buy’s comparable value.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 14
+      "verifiedAt": "2026-11-24",
+      "priority": 19
     },
     {
       "id": "best-buy-shark-powerdetect-speed-cordless-stick-vacuum",
@@ -307,8 +411,8 @@
       "url": "https://www.bestbuy.com/product/shark-powerdetect-speed-cordless-stick-vacuum-powerful-suction-hepa-filtration-60-min-runtime-carpet-hard-floor-ivory/6689453",
       "note": "Sold by Best Buy with shipping and pickup available. $499.99 is Best Buy’s comparable value and may be higher than the recent street price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 15
+      "verifiedAt": "2026-11-24",
+      "priority": 20
     },
     {
       "id": "best-buy-hisense-98-inch-qd5-hi-qled-4k-fire-tv-2026",
@@ -328,8 +432,8 @@
       "url": "https://www.bestbuy.com/product/hisense-98-class-qd5-hi-qled-series-4k-uhd-smart-fire-tv-2026/6685580",
       "note": "Sold by Best Buy. Large-item pickup and delivery vary by location. $2,499.99 is a retailer comparable value and may not reflect the recent street price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 16
+      "verifiedAt": "2026-11-24",
+      "priority": 21
     },
     {
       "id": "best-buy-samsung-49-inch-odyssey-oled-g9-gaming-monitor",
@@ -349,8 +453,8 @@
       "url": "https://www.bestbuy.com/product/samsung-49-odyssey-oled-g9-g93sd-series-dqhd-240hz-0-03ms-g-sync-compatible-curved-gaming-monitor-with-hdr-silver/6599654",
       "note": "Sold by Best Buy. Open-box options may also appear on the retailer page. $1,699.99 is Best Buy’s comparable value.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 17
+      "verifiedAt": "2026-11-24",
+      "priority": 22
     },
     {
       "id": "bh-photo-dji-osmo-pocket-3-creator-combo",
@@ -369,8 +473,8 @@
       "url": "https://www.bhphotovideo.com/c/product/1788804-REG/dji_cp_os_00000302_01_osmo_pocket_3_creator.html",
       "note": "In stock when checked. Sold by B&H with free delivery and extended eligible returns through Feb. 1, 2027.",
       "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 18
+      "verifiedAt": "2026-11-24",
+      "priority": 23
     },
     {
       "id": "best-buy-ring-battery-doorbell-2k-2026",
@@ -390,8 +494,8 @@
       "url": "https://www.bestbuy.com/product/ring-battery-doorbell-2k-2026-retinal-2k-wide-angle-video-6x-enhanced-zoom-two-way-talk-and-built-in-battery-mocha/6672491",
       "note": "Mocha model sold by Best Buy. Shipping and pickup were available when checked; Ring Protect subscription is optional and sold separately. $99.99 is Best Buy’s comparable value.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 19
+      "verifiedAt": "2026-11-24",
+      "priority": 24
     },
     {
       "id": "bh-photo-apple-airpods-max-usb-c-starlight",
@@ -410,8 +514,8 @@
       "url": "https://www.bhphotovideo.com/c/product/1852447-REG/apple_mww53am_a_airpods_max_starlight.html",
       "note": "In stock online when checked. B&H is an Apple-authorized dealer. Free delivery and extended eligible returns through Feb. 1, 2027.",
       "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 20
+      "verifiedAt": "2026-11-24",
+      "priority": 25
     },
     {
       "id": "best-buy-dyson-v10-konical-cordless-vacuum",
@@ -431,8 +535,8 @@
       "url": "https://www.bestbuy.com/product/dyson-v10-konical-newest-model-cordless-vacuum-black-blue/6675166",
       "note": "Sold by Best Buy with Add to Cart active when checked. Includes Dyson’s two-year limited warranty; shipping and pickup vary by ZIP/store. $499.99 is Best Buy’s comparable value.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 21
+      "verifiedAt": "2026-11-24",
+      "priority": 26
     },
     {
       "id": "ikea-ikea-morabo-sofa-gunnared-light-green-wood",
@@ -452,29 +556,8 @@
       "url": "https://www.ikea.com/us/en/p/morabo-sofa-gunnared-light-green-wood-s09318339/",
       "note": "IKEA Family price. Availability and delivery depend on location. Includes a 10-year limited warranty and IKEA’s eligible 365-day return window.",
       "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-21",
-      "priority": 22
-    },
-    {
-      "id": "target-apple-airpods-pro-3",
-      "productKey": "apple-airpods-pro-3",
-      "name": "Apple AirPods Pro 3",
-      "retailer": "Target",
-      "price": 169.99,
-      "was": 249.99,
-      "image": "https://target.scene7.com/is/image/Target/GUEST_d1b8c229-751b-430b-a0fb-521d7777a784?fmt=pjpeg&hei=600&wid=600",
-      "condition": "New · Black Friday",
-      "category": "Apple",
-      "channels": [
-        "Online",
-        "Store / pickup"
-      ],
-      "ends": "Target Black Friday event ends Nov. 29",
-      "url": "https://www.target.com/p/ap2022-true-wireless-bluetooth-headphones/-/A-85978609",
-      "note": "Sold and fulfilled directly by Target, factory sealed and in stock when checked. Shipping, pickup and same-day delivery vary by ZIP/store. Target lists a 14-day electronics return window and Apple’s one-year limited warranty.",
-      "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 23
+      "verifiedAt": "2026-11-24",
+      "priority": 27
     },
     {
       "id": "anker-zolo-magnetic-power-bank-10k-30w",
@@ -493,8 +576,8 @@
       "url": "https://www.anker.com/products/a1685?variant=44427833213078",
       "note": "Sold directly by Anker and in stock when checked, with estimated delivery in 3–7 business days. Includes fast free shipping, a 30-day money-back guarantee and Anker warranty support. The $49.99 comparison is Anker’s listed regular price.",
       "comparisonType": "verified-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 24
+      "verifiedAt": "2026-11-24",
+      "priority": 29
     },
     {
       "id": "belkin-boostcharge-pro-2-in-1-qi2-15w-dock",
@@ -513,71 +596,8 @@
       "url": "https://www.belkin.com/p/2-in-1-wireless-charging-dock-with-qi2-15w/WIZ027ttH36.html",
       "note": "Sold directly by Belkin with Add to Cart active when checked. Includes a 30W power supply and cable, a two-year warranty and 30-day money-back guarantee. Free standard shipping requires a $75 order. $119.99 is Belkin’s listed reference price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 25
-    },
-    {
-      "id": "best-buy-canon-eos-rebel-t7-two-lens-kit",
-      "productKey": "canon-eos-rebel-t7-two-lens-kit",
-      "name": "Canon EOS Rebel T7 DSLR Two-Lens Kit",
-      "retailer": "Best Buy",
-      "price": 499.99,
-      "was": 699.99,
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323759_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
-      "condition": "New · Black Friday",
-      "category": "Cameras",
-      "channels": [
-        "Online",
-        "Store / pickup"
-      ],
-      "ends": "Best Buy Black Friday event ends Nov. 28, 11:59 p.m. CT",
-      "url": "https://www.bestbuy.com/product/canon-eos-rebel-t7-dslr-video-two-lens-kit-with-ef-s-18-55mm-and-ef-75-300mm-lenses-black/JXL8XXCR6G",
-      "note": "Includes the EF-S 18–55mm and EF 75–300mm lenses. Best Buy’s current Black Friday listing showed shipping and pickup available; availability varies by ZIP/store. $699.99 is Best Buy’s comparable value.",
-      "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 27
-    },
-    {
-      "id": "home-depot-lg-28-cu-ft-french-door-refrigerator",
-      "productKey": "lg-lhfs28xbs-french-door-refrigerator",
-      "name": "LG 28-cu.-ft. French-Door Refrigerator",
-      "retailer": "Home Depot",
-      "price": 1699,
-      "was": 3099,
-      "image": "https://images.thdstatic.com/productImages/239f6aa5-23ac-454f-950b-44a0f67a5125/svn/printproof-stainless-steel-lg-french-door-refrigerators-lhfs28xbs-64_600.jpg",
-      "condition": "New · Black Friday",
-      "category": "Appliances",
-      "channels": [
-        "Online",
-        "Store / delivery"
-      ],
-      "ends": "Home Depot Black Friday event runs through Dec. 2; while supplies last",
-      "url": "https://www.homedepot.com/p/LG-36-in-28-cu-ft-3-Door-French-Door-Refrigerator-w-Ice-and-Water-Dispenser-and-Craft-Ice-in-PrintProof-Stainless-Steel-LHFS28XBS/325158253",
-      "note": "Model LHFS28XBS, sold by Home Depot. The live page showed a limit of 6. Delivery, installation, haul-away and local availability require a ZIP check. $3,099 is Home Depot’s listed former/reference price.",
-      "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 28
-    },
-    {
-      "id": "target-nba-2k27-playstation-5",
-      "productKey": "nba-2k27-playstation-5",
-      "name": "NBA 2K27 – PlayStation 5",
-      "retailer": "Target",
-      "price": 29.99,
-      "was": 67.99,
-      "image": "https://target.scene7.com/is/image/Target/GUEST_c89f307b-0dcf-44b7-b426-7c841d989f2f?fmt=pjpeg&hei=600&wid=600",
-      "condition": "New · Black Friday",
-      "category": "Gaming",
-      "channels": [
-        "Online",
-        "Store / pickup"
-      ],
-      "ends": "Target Black Friday event ends Nov. 29",
-      "url": "https://www.target.com/p/mcb-27-playstation-5/-/A-1012695231",
-      "note": "Physical PS5 edition sold directly by Target and in stock when checked. Shipping, pickup and same-day availability vary by ZIP/store. Target lists a 30-day return window. $67.99 is Target’s regular/reference price.",
-      "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 29
+      "verifiedAt": "2026-11-24",
+      "priority": 30
     },
     {
       "id": "target-beats-solo-4-bright-pink",
@@ -597,8 +617,71 @@
       "url": "https://www.target.com/p/beats-solo-4-bluetooth-wireless-on-ear-headphones-bright-pink/-/A-1012454303",
       "note": "Bright Pink model was in stock with Add to Cart active on Target’s product page. Shipping, pickup and same-day availability vary by ZIP/store. Target lists a 14-day return window and a one-year limited warranty. $199.99 is Target’s regular/reference price and may not reflect the recent street price.",
       "comparisonType": "retailer-reference",
-      "verifiedAt": "2026-11-22",
-      "priority": 26
+      "verifiedAt": "2026-11-24",
+      "priority": 31
+    },
+    {
+      "id": "best-buy-canon-eos-rebel-t7-two-lens-kit",
+      "productKey": "canon-eos-rebel-t7-two-lens-kit",
+      "name": "Canon EOS Rebel T7 DSLR Two-Lens Kit",
+      "retailer": "Best Buy",
+      "price": 499.99,
+      "was": 699.99,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323759_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+      "condition": "New · Black Friday",
+      "category": "Cameras",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Best Buy Black Friday event ends Nov. 28, 11:59 p.m. CT",
+      "url": "https://www.bestbuy.com/product/canon-eos-rebel-t7-dslr-video-two-lens-kit-with-ef-s-18-55mm-and-ef-75-300mm-lenses-black/JXL8XXCR6G",
+      "note": "Includes the EF-S 18–55mm and EF 75–300mm lenses. Best Buy’s current Black Friday listing showed shipping and pickup available; availability varies by ZIP/store. $699.99 is Best Buy’s comparable value.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 32
+    },
+    {
+      "id": "home-depot-lg-28-cu-ft-french-door-refrigerator",
+      "productKey": "lg-lhfs28xbs-french-door-refrigerator",
+      "name": "LG 28-cu.-ft. French-Door Refrigerator",
+      "retailer": "Home Depot",
+      "price": 1699,
+      "was": 3099,
+      "image": "https://images.thdstatic.com/productImages/239f6aa5-23ac-454f-950b-44a0f67a5125/svn/printproof-stainless-steel-lg-french-door-refrigerators-lhfs28xbs-64_600.jpg",
+      "condition": "New · Black Friday",
+      "category": "Appliances",
+      "channels": [
+        "Online",
+        "Store / delivery"
+      ],
+      "ends": "Home Depot Black Friday event runs through Dec. 2; while supplies last",
+      "url": "https://www.homedepot.com/p/LG-36-in-28-cu-ft-3-Door-French-Door-Refrigerator-w-Ice-and-Water-Dispenser-and-Craft-Ice-in-PrintProof-Stainless-Steel-LHFS28XBS/325158253",
+      "note": "Model LHFS28XBS, sold by Home Depot. The live page showed a limit of 6. Delivery, installation, haul-away and local availability require a ZIP check. $3,099 is Home Depot’s listed former/reference price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 33
+    },
+    {
+      "id": "target-nba-2k27-playstation-5",
+      "productKey": "nba-2k27-playstation-5",
+      "name": "NBA 2K27 – PlayStation 5",
+      "retailer": "Target",
+      "price": 29.99,
+      "was": 67.99,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_c89f307b-0dcf-44b7-b426-7c841d989f2f?fmt=pjpeg&hei=600&wid=600",
+      "condition": "New · Black Friday",
+      "category": "Gaming",
+      "channels": [
+        "Online",
+        "Store / pickup"
+      ],
+      "ends": "Target Black Friday event ends Nov. 29",
+      "url": "https://www.target.com/p/mcb-27-playstation-5/-/A-1012695231",
+      "note": "Physical PS5 edition sold directly by Target and in stock when checked. Shipping, pickup and same-day availability vary by ZIP/store. Target lists a 30-day return window. $67.99 is Target’s regular/reference price.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 34
     }
   ]
 }
