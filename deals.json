@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T08:09:49.218Z",
+  "updatedAt": "2026-11-24T23:22:02.707Z",
   "currency": "USD",
   "deals": [
     {
@@ -682,6 +682,106 @@
       "comparisonType": "retailer-reference",
       "verifiedAt": "2026-11-24",
       "priority": 34
+    },
+    {
+      "id": "anker-140w-four-port-charger",
+      "productKey": "anker-140w-four-port-charger",
+      "name": "Anker 140W 4-Port Charger with USB-C Cable",
+      "price": 59.99,
+      "was": 89.99,
+      "retailer": "Anker",
+      "category": "Accessories",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22440%22%20viewBox%3D%220%200%20600%20440%22%3E%3Crect%20width%3D%22600%22%20height%3D%22440%22%20fill%3D%22%23eef1f5%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22130%22%20width%3D%22110%22%20height%3D%22110%22%20rx%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%237b8794%22%20stroke-width%3D%224%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%20fill%3D%22%23536171%22%3EView%20product%20at%20retailer%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "condition": "New · Sale",
+      "channels": [
+        "Online"
+      ],
+      "ends": "No product-specific sale end date stated",
+      "url": "https://www.anker.com/products/a2697-anker-charger-140w-4-port?variant=44320558055574",
+      "note": "Sold directly by Anker. In stock; estimated delivery in 3–7 business days. Purchase button available. 30-day money-back guarantee. Comparison uses Anker's displayed reference price, not verified recent street pricing. No purchase limit stated.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 35
+    },
+    {
+      "id": "anker-prime-100w-three-port-charger",
+      "productKey": "anker-prime-100w-three-port-charger",
+      "name": "Anker Prime 100W 3-Port GaN Charger",
+      "price": 45.99,
+      "was": 69.99,
+      "retailer": "Anker",
+      "category": "Accessories",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22440%22%20viewBox%3D%220%200%20600%20440%22%3E%3Crect%20width%3D%22600%22%20height%3D%22440%22%20fill%3D%22%23eef1f5%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22130%22%20width%3D%22110%22%20height%3D%22110%22%20rx%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%237b8794%22%20stroke-width%3D%224%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%20fill%3D%22%23536171%22%3EView%20product%20at%20retailer%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "condition": "New · Preorder",
+      "channels": [
+        "Online"
+      ],
+      "ends": "No product-specific sale end date stated",
+      "url": "https://www.anker.com/products/a2688-anker-prime-charger-100w-3-ports-gan?variant=43931966079126",
+      "note": "Sold directly by Anker. Preorder accepted. Estimated shipping Nov. 25–Dec. 5, 2026. Charging cable not included. Purchase button available. 30-day money-back guarantee. Comparison uses Anker's displayed reference price, not verified recent street pricing. No purchase limit stated.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 36
+    },
+    {
+      "id": "anker-prime-26k-300w-power-bank",
+      "productKey": "anker-prime-26k-300w-power-bank",
+      "name": "Anker Prime 26K 300W Power Bank",
+      "price": 159.99,
+      "was": 229.99,
+      "retailer": "Anker",
+      "category": "Accessories",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22440%22%20viewBox%3D%220%200%20600%20440%22%3E%3Crect%20width%3D%22600%22%20height%3D%22440%22%20fill%3D%22%23eef1f5%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22130%22%20width%3D%22110%22%20height%3D%22110%22%20rx%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%237b8794%22%20stroke-width%3D%224%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%20fill%3D%22%23536171%22%3EView%20product%20at%20retailer%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "condition": "New · Sale",
+      "channels": [
+        "Online"
+      ],
+      "ends": "No product-specific sale end date stated",
+      "url": "https://www.anker.com/products/a110a-anker-prime-26k-300w-power-bank?variant=46383111110806",
+      "note": "Sold directly by Anker. In stock; estimated delivery in 3–7 business days. Power bank only; charging base not included. Purchase button available. 30-day money-back guarantee. Comparison uses Anker's displayed reference price, not verified recent street pricing. No purchase limit stated.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 37
+    },
+    {
+      "id": "anker-prime-160w-three-port-charger",
+      "productKey": "anker-prime-160w-three-port-charger",
+      "name": "Anker Prime 160W 3-Port Smart Display Charger",
+      "price": 99.99,
+      "was": 149.99,
+      "retailer": "Anker",
+      "category": "Accessories",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22440%22%20viewBox%3D%220%200%20600%20440%22%3E%3Crect%20width%3D%22600%22%20height%3D%22440%22%20fill%3D%22%23eef1f5%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22130%22%20width%3D%22110%22%20height%3D%22110%22%20rx%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%237b8794%22%20stroke-width%3D%224%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%20fill%3D%22%23536171%22%3EView%20product%20at%20retailer%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "condition": "New · Sale",
+      "channels": [
+        "Online"
+      ],
+      "ends": "No product-specific sale end date stated",
+      "url": "https://www.anker.com/products/a2687-anker-prime-charger-160w-3-ports-gan?variant=45578451779734",
+      "note": "Sold directly by Anker. In stock; estimated delivery in 3–7 business days. Purchase button available. 30-day money-back guarantee. Comparison uses Anker's displayed reference price, not verified recent street pricing. No purchase limit stated.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 38
+    },
+    {
+      "id": "columbia-womens-aldermore-fleece-cargo-sweatpants",
+      "productKey": "columbia-womens-aldermore-fleece-cargo-sweatpants",
+      "name": "Columbia Women's Aldermore Fleece Cargo Sweatpants",
+      "price": 42,
+      "was": 70,
+      "retailer": "Columbia",
+      "category": "Clothing",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22440%22%20viewBox%3D%220%200%20600%20440%22%3E%3Crect%20width%3D%22600%22%20height%3D%22440%22%20fill%3D%22%23eef1f5%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22130%22%20width%3D%22110%22%20height%3D%22110%22%20rx%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%237b8794%22%20stroke-width%3D%224%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%20fill%3D%22%23536171%22%3EView%20product%20at%20retailer%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "condition": "New · Selected sizes",
+      "channels": [
+        "Online"
+      ],
+      "ends": "No end date stated; selected sizes only",
+      "url": "https://www.columbia.com/p/womens-aldermore-fleece-cargo-sweatpants-2135281.html/?color=010&dimension=L&pid=195982914824&size=M",
+      "note": "Sold directly by Columbia. Black, medium, long inseam showed Add to Bag at $42. Confirm your size, inseam and color before purchase. Returns accepted within 60 days in original unworn condition with tags. $70 is Columbia's original reference price, not verified recent street pricing. No purchase limit stated.",
+      "comparisonType": "retailer-reference",
+      "verifiedAt": "2026-11-24",
+      "priority": 39
     }
   ]
 }
