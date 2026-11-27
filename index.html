@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261121-3" />
+    <link rel="stylesheet" href="styles.css?v=20261127-2" />
   </head>
   <body>
     <main class="shell">
@@ -20,9 +20,11 @@
         <div class="hero-points"><span>Online deals nationwide</span><span>Store and pickup clearly labeled</span><span>No affiliate links</span></div>
         <div class="status"><span class="live-dot"></span><span id="checked">Loading latest checks…</span></div>
       </header>
-      <section id="doorbusters" class="method" hidden>
-        <h2>Black Friday store ads</h2>
-        <ul id="store-ads"></ul>
+      <section id="doorbusters" class="ad-directory" aria-label="Black Friday store ads" hidden>
+        <details>
+          <summary><strong>Black Friday store ads</strong><span id="ad-count"></span></summary>
+          <ul id="store-ads"></ul>
+        </details>
       </section>
       <section class="controls" aria-label="Deal filters"><div class="chips" id="filters"></div><div class="control-tools"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search products or stores" /></label><label class="sort-control"><span>Sort</span><select id="sort"><option value="featured">Featured</option><option value="discount">Highest discount</option><option value="savings">Biggest savings</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></label></div></section>
       <section aria-live="polite"><div class="result-line"><strong id="count">0</strong> verified offers <span>Prices and stock can change at checkout.</span></div><div id="deals" class="deal-grid"></div><p id="empty" class="empty" hidden>No matching verified offers.</p></section>
@@ -30,6 +32,6 @@
       <footer><span>DEAL RADAR · SMARTER HOLIDAY SHOPPING</span><span>Not affiliated with listed retailers.</span></footer>
     </main>
     <template id="deal-template"><article class="deal-card"><div class="visual"><img class="product-image" alt="" loading="lazy" decoding="async" /><span class="image-fallback" hidden>Photo temporarily unavailable</span><span class="tag"></span></div><div class="deal-copy"><p class="retailer"></p><h2></h2><div class="availability"></div><p class="ends"></p><p class="meta"></p><div class="price-comparison"><div><span>Now</span><strong class="price"></strong></div><div><span>Reference</span><strong class="was"></strong></div><div><span>Discount</span><strong class="percent"></strong></div></div><p class="saving"></p><p class="comparison-note"></p><a class="shop" target="_blank" rel="noopener noreferrer">View official offer <span>↗</span></a></div></article></template>
-    <script src="app.js?v=20261127-1"></script>
+    <script src="app.js?v=20261127-2"></script>
   </body>
 </html>

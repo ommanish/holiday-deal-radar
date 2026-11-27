@@ -70,9 +70,12 @@ function showStoreAds(ads) {
     const link = document.createElement('a');
     link.href = ad.url;
     link.textContent = ad.retailer;
-    row.append(link, ' — ' + ad.details);
+    const description = document.createElement('p');
+    description.textContent = ad.details;
+    row.append(link, description);
     list.append(row);
   }
+  document.querySelector('#ad-count').textContent = list.childElementCount === 1 ? '1 retailer' : list.childElementCount + ' retailers';
   document.querySelector('#doorbusters').hidden = !list.childElementCount;
 }
 
