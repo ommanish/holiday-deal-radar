@@ -20,13 +20,16 @@
         <div class="hero-points"><span>Online deals nationwide</span><span>Store and pickup clearly labeled</span><span>No affiliate links</span></div>
         <div class="status"><span class="live-dot"></span><span id="checked">Loading latest checks…</span></div>
       </header>
-      <section class="zip-panel" aria-labelledby="zip-title"><div><strong id="zip-title">Shop nationwide. Check stores near you.</strong><span>Online offers are always shown. Your ZIP only personalizes pickup, warehouse and local-delivery labels.</span></div><form id="zip-form" class="zip-form"><label for="zip">U.S. ZIP</label><input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="e.g. 95124" /><button type="submit">Use ZIP</button></form><p id="zip-status" class="zip-status">No ZIP saved. Store inventory must be confirmed on the retailer page.</p></section>
+      <section id="doorbusters" class="method" hidden>
+        <h2>Black Friday store ads</h2>
+        <ul id="store-ads"></ul>
+      </section>
       <section class="controls" aria-label="Deal filters"><div class="chips" id="filters"></div><div class="control-tools"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search products or stores" /></label><label class="sort-control"><span>Sort</span><select id="sort"><option value="featured">Featured</option><option value="discount">Highest discount</option><option value="savings">Biggest savings</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></label></div></section>
       <section aria-live="polite"><div class="result-line"><strong id="count">0</strong> verified offers <span>Prices and stock can change at checkout.</span></div><div id="deals" class="deal-grid"></div><p id="empty" class="empty" hidden>No matching verified offers.</p></section>
       <section id="method" class="method"><p class="eyebrow"><i></i> OUR STANDARD</p><h2>Useful only when it’s real.</h2><div class="method-grid"><article><b>01</b><h3>Direct sources</h3><p>Every offer links to the official retailer or brand page—never an affiliate redirect.</p></article><article><b>02</b><h3>Availability upfront</h3><p>Online, pickup and store options are labeled separately so shoppers know how the deal can be purchased.</p></article><article><b>03</b><h3>Condition and pricing</h3><p>New and refurbished conditions are explicit, with potentially inflated comparison prices flagged in the card notes.</p></article></div></section>
       <footer><span>DEAL RADAR · SMARTER HOLIDAY SHOPPING</span><span>Not affiliated with listed retailers.</span></footer>
     </main>
     <template id="deal-template"><article class="deal-card"><div class="visual"><img class="product-image" alt="" loading="lazy" decoding="async" /><span class="image-fallback" hidden>Photo temporarily unavailable</span><span class="tag"></span></div><div class="deal-copy"><p class="retailer"></p><h2></h2><div class="availability"></div><p class="ends"></p><p class="meta"></p><div class="price-comparison"><div><span>Now</span><strong class="price"></strong></div><div><span>Reference</span><strong class="was"></strong></div><div><span>Discount</span><strong class="percent"></strong></div></div><p class="saving"></p><p class="comparison-note"></p><a class="shop" target="_blank" rel="noopener noreferrer">View official offer <span>↗</span></a></div></article></template>
-    <script src="app.js?v=20261121-3"></script>
+    <script src="app.js?v=20261127-1"></script>
   </body>
 </html>

@@ -989,5 +989,49 @@
       "checkedAt": "2026-11-27",
       "statusNote": "B&H marks this exact Starlight USB-C AirPods Max model discontinued and redirects to a different replacement model. The previous $399.99 offer is no longer available."
     }
+  ],
+  "storeAds": [
+    {
+      "retailer": "Best Buy",
+      "url": "https://www.bestbuy.com/black-friday",
+      "details": "Electronics doorbusters through November 28 while supplies last. See individual offers below.",
+      "displayThrough": "2026-11-28"
+    },
+    {
+      "retailer": "Columbia",
+      "url": "https://www.columbia.com/c/sale/",
+      "details": "Advertised doorbusters include the Alpine Action II jacket ($90, listed at $180) and Castle Dale fleece ($27.50, listed at $55). Check size and color availability.",
+      "displayThrough": "2026-11-27"
+    },
+    {
+      "retailer": "Walmart",
+      "url": "https://corporate.walmart.com/askwalmart/when-are-walmarts-2026-black-friday-and-cyber-monday-deals",
+      "details": "In-store event opened at 6 a.m. local time November 27. Check store stock before traveling.",
+      "displayThrough": "2026-11-27"
+    },
+    {
+      "retailer": "Target",
+      "url": "https://corporate.target.com/press/release/2026/11/target-announces-black-friday-deals-and-giveaways-to-help-families-save-big-on-gifts-they-ll-love-to",
+      "details": "Sale runs through November 29. The opening giveaway was limited to the first 100 eligible guests per store.",
+      "displayThrough": "2026-11-29"
+    },
+    {
+      "retailer": "Kohl’s",
+      "url": "https://s204.q4cdn.com/271435555/files/doc_news/Now-Arriving-at-The-North-Kohls-November-Holiday-Savings-Events-2026.pdf",
+      "details": "Online doorbusters began Thanksgiving. The November 27 opening giveaway was limited to the first 200 shoppers per store.",
+      "displayThrough": "2026-11-27"
+    },
+    {
+      "retailer": "Macy’s",
+      "url": "https://www.macys.com/s/guides/black-friday-at-macys/",
+      "details": "Official doorbuster guide. Check qualifying purchases and availability for the tote promotion.",
+      "displayThrough": "2026-11-27"
+    },
+    {
+      "retailer": "The Home Depot",
+      "url": "https://www.homedepot.com/c/localad",
+      "details": "November 27 one-day doorbusters. Select a store to view its local ad.",
+      "displayThrough": "2026-11-27"
+    }
   ]
 }

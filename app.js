@@ -2,7 +2,6 @@ let deals=[];
 let dataUpdatedAt='';
 const currency=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'});
 let active='All';
-let savedZip=localStorage.getItem('dealRadarZip')||'';
 const template=document.querySelector('#deal-template');
 const deck=document.querySelector('#deals');
 const search=document.querySelector('#search');
@@ -21,7 +20,7 @@ function sorted(list){
 function draw(){
   const query=search.value.toLowerCase();
   const filtered=deals.filter(deal=>{
-    const matchesFilter=active==='All'||active===deal.category||(active==='Refurbished'&&deal.condition.includes('Refurbished'));
+    const matchesFilter=active==='All'||active===deal.category||(active==='Doorbusters'&&deal.condition.includes('Doorbuster'))||(active==='Refurbished'&&deal.condition.includes('Refurbished'));
     return matchesFilter&&`${deal.name} ${deal.retailer} ${deal.category}`.toLowerCase().includes(query);
   });
   const visible=sorted(filtered);
@@ -38,7 +37,7 @@ function draw(){
     node.querySelector('.meta').textContent=deal.note;
     node.querySelector('.ends').textContent=deal.ends;
     const channelRow=node.querySelector('.availability');
-    deal.channels.forEach(channel=>{const chip=document.createElement('span');const isOnline=channel==='Online';chip.textContent=isOnline?channel:(savedZip?`${channel} · check ${savedZip}`:`${channel} · ZIP check`);chip.className=isOnline?'availability-chip online':'availability-chip store';channelRow.append(chip)});
+    deal.channels.forEach(channel=>{const chip=document.createElement('span');const isOnline=channel==='Online';chip.textContent=channel;chip.className=isOnline?'availability-chip online':'availability-chip store';channelRow.append(chip)});
     node.querySelector('.price').textContent=currency.format(deal.price);
     node.querySelector('.was').textContent=currency.format(deal.was);
     node.querySelector('.percent').textContent=`${discount(deal)}% off`;
@@ -56,19 +55,26 @@ function buildFilters(){
   const preferred=['Apple','Headphones','Vacuums','TVs & Home','Monitors','Cameras','Clothing','Furniture'];
   const available=[...new Set(deals.map(deal=>deal.category))];
   const categories=preferred.filter(category=>available.includes(category)).concat(available.filter(category=>!preferred.includes(category)).sort());
-  const filters=['All',...categories,'Refurbished'];
+  const filters=['All',...(deals.some(deal=>deal.condition.includes('Doorbuster'))?['Doorbusters']:[]),...categories,'Refurbished'];
   const filterBar=document.querySelector('#filters');
   filterBar.replaceChildren();
   filters.forEach(filter=>{const button=document.createElement('button');button.className=`chip ${filter==='All'?'active':''}`;button.textContent=filter;button.onclick=()=>{active=filter;document.querySelectorAll('.chip').forEach(chip=>chip.classList.toggle('active',chip.textContent===filter));draw()};filterBar.append(button)});
 }
 search.addEventListener('input',draw);
 sortSelect.addEventListener('change',draw);
-const zipForm=document.querySelector('#zip-form');
-const zipInput=document.querySelector('#zip');
-const zipStatus=document.querySelector('#zip-status');
-function updateZipStatus(){zipInput.value=savedZip;zipStatus.textContent=savedZip?`Using ZIP ${savedZip} for store, pickup and local-delivery checks. Confirm live inventory on the official retailer page.`:'No ZIP saved. Store inventory must be confirmed on the retailer page.'}
-zipForm.addEventListener('submit',event=>{event.preventDefault();const value=zipInput.value.trim();if(!/^\d{5}$/.test(value)){zipStatus.textContent='Enter a valid 5-digit U.S. ZIP code.';zipInput.focus();return}savedZip=value;localStorage.setItem('dealRadarZip',savedZip);updateZipStatus();draw()});
-updateZipStatus();
+function showStoreAds(ads) {
+  const today = new Intl.DateTimeFormat('en-CA', {timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date());
+  const list = document.querySelector('#store-ads');
+  for (const ad of ads.filter(ad => today <= ad.displayThrough)) {
+    const row = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = ad.url;
+    link.textContent = ad.retailer;
+    row.append(link, ' — ' + ad.details);
+    list.append(row);
+  }
+  document.querySelector('#doorbusters').hidden = !list.childElementCount;
+}
 
 async function loadDeals(){
   try{
@@ -78,6 +84,7 @@ async function loadDeals(){
     if(!Array.isArray(payload.deals))throw new Error('Deal data is invalid');
     deals=payload.deals;
     dataUpdatedAt=payload.updatedAt;
+    showStoreAds(payload.storeAds || []);
     buildFilters();
     const checked=new Date(dataUpdatedAt);
     document.querySelector('#checked').textContent=`Prices checked · ${checked.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
